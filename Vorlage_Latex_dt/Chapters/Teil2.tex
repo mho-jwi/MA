@@ -1,0 +1,167 @@
+\chapter{Teil2}
+\label{cha:Teil2}
+\section{Modell}
+\label{sec:Modell}
+
+
+
+\begin{normalsize}
+\begin{LARGE}
+
+\subsection{Stofftransport}
+
+\subsubsection{allgemein}
+
+Die im untersuchten Enthalpieübertrager verwendete Membran besteht aus einer dichten Grundschichten und einer porösen Stützschicht. der Stofftransport lässt sich entsprechend als eine Kette von in Reihe geschalteten Prozessen darstellen. Eine Übersicht über die in Reihe geschalteten Prozesse gibt die folgende Abbildung.
+% Bild zu Membranprozessen einfügen
+
+Im ersten Schritt diffundiert der Wasserdampf durch den Luftstrom der Abluftseite. Dies geschieht auf Grund eines Konzentrationsgradienten, da der Wassermassenstrom über die Membran aus dem Luftstrom abgeleitet wird. 
+
+In einem zweiten Schritt sorpiert die Membranoberfläche den Wasserdampf. Es folgt die Diffusion durch die dichte Grundschicht der Membran. An der zuluftseitigen Oberfläche der Membran kommt es zur Desorption des Wassers in die Zuluft. 
+
+In einem fünften Schritt wird der Wasserdampf durch die Poröse Membran transportiert und verteilt sich im Zuluftstrom, da die Konzentrationsdifferenz einen Diffusionsprozess verursachen.
+
+Der Betrachtung der Transportprozesse in Z Richtung innerhalb der Gasphasen als Diffunsionsprozesse liegt die Annahme einer laminaren Strömung zu Grunde. Im Fall laminarer Strömung kommt es nicht zum Stoffaustausch in Z-Richtung. Da die Turbulenz stark von der Geometrie und des Strömungskanals und der Strömungsgeschwindigkeit abhängt, ist diese Annahme nicht uneingeschränkt gültig. Insbesondere Spacermaterialien werden bewusst dazu eingesetzt die Turbulenz in den Strömungskanälen zu erhöhen.
+Eine erhöhte Turbulenz führt zu einer Abnahme der Konzentrationsüberhöhung an den Membranoberflächen und wirkt sich so positiv auf die Diffunsionsgeschwindigkeiten aus.  
+
+%Bild zur Konzentrationspolarisation einfügen
+  
+Konzentrationsüberhöhungen entstehen durch einen Konvektiven Fluss. Der Permeatfluss durch die Membran zieht auf Grund der Kontnuitätsgleichungen einen Konvektiven Massenstrom in z-Richtung nach sich. Da die Membran selectiv ist, diffundiert nur einige Moleküle (in diesem Fall die Wassermoleküle) durch die Membran, die und entsprechend nimmt die Konzentration der anderen Komponenten an der Membranoberfläche zu. Die Auswirkungen der Konzentrationspolarisation sind aber in diesem Fall gering, da der Permeatstrom sehr gering im Vergleich zum Gesamtmassenstrom durch den Kanal ist. 
+
+Wie oben beschrieben führt eine Betrachtung der der 6 Prozessschritte als Reihenschaltung zu einer guten Beschreibung des Stofftransportes. Dies geschieht analog zur Elektrotechnik. Entsprechend ergibt sich der Gesamtwiderstand $W_{ges}$ der Membran aus einer Addition der Einzelwiderstände von dichter Membran $W_{d}$ und poröser Membran $W_{p}$:
+
+ \begin{equation}
+ W_{ges} = W_{d} + W_{p}
+\end{equation} 
+ 
+Im Fall von parallel geschalteten Widerständen, zum Beispiel beim Auftreten von Poren in der dichten Membran, kann der Gesamtwiderstand entsprechend zu 
+
+\begin{equation}
+\frac{1}{W_{ges}} = \frac{1}{W_{d}} + \frac{1}{W_{p}}
+\end{equation}
+
+gebildet werden. 
+
+
+\subsubsection{Sorption an Membranoberfläche}
+
+Der Sorptionsprozess erfolgt aufgrund einer Differenz im chemischen Potential. Die Beschreibung des Sorptionsprozesses mit physikalischen Modellen ist jedoch schwierig. Meist werden hydrophile Membranenmaterialien für die dichte Membran eingesetzt, sodass an der Feed-Seite eine höhrer Potentialdifferenz entsteht. Neben der Affinität des Membranmaterials ist, wie auch bei Lösungen anderer Aggregatzustände die maximale Aufnahmekapazität der Membran für den Stoff $i$ ausschlaggebend. Daher hat sich für die Beschreibung des Sorptionsprozesses ein halbempirisches Modell durchgesetzt das sich in den meisten Veröffentlichungen wiederfindet. Demnach stellt sich in der Membranoberflächhe eine Feuchtebeladung $\Theta$ von 
+
+\begin{equation}
+\Theta = \dfrac{\omega_{max}}{1-c+\frac{c}{\Phi}}
+\end{equation}
+
+ein. Wobei $\omega_{max}$ die maximal mögliche Feuchte im Membranmaterial angibt, $c$ eine Materialkonstante ist, die den Einfluss der Wasseraffinität der Membran wiederspiegelt und $\Phi$ die Luftfeuchte im Luftstrom ist. 
+
+
+
+\subsubsection{Diffusion durch dichte Membran}
+
+Die Diffusion durch die Dicht Membran ist im vorliegenden Fall der einflussreichste Prozess auf die Transportgeschwindigkeit, da hier der Widerstand am größten ist. Die Triebkraft ist hier wie für alle Diffusionsprozesse das chemische Potential. 
+
+%(Da die Wechselwirkungen mit der Temperatur gering sind und die es nicht zu relevanten chemischen Reaktionen kommt, kann der Partialdruck als Triebkraft angenommen werden. Im Fall von gleichem Druck auf beiden Seiten der Membran vereinfacht sich das System noch weiter und die Konzentration der Permeats in der Membranoberfläche kann als einzige relevante Triebkraft angesehen werden. 
+%Daher resultiert der Permeatstrom J_{i} durch die Membran aus der Gleichung:
+%\begin{equation}
+%J_{i} = R*T*L_{i}/C_{i}*dC_{i}/dx
+%\end{equation}
+
+%in Abhängigkeit von der Gaskonstanten R, der Temperatur T und der Konzentration des Permeates i C_{i} und dessen örtlichen Gradienten dC_{i}/dx)
+
+Unter der Annahme einer Membran und konstanter thermodynamischer Randbedingungen (Druck und Temperatur) in der Membran, ergibt sich eine lineare Konzentrationsverteilung in der Membran. In der Literatur wird der Zusammenhang für den örtlichen Gradienten des chemischen Potentials und der übertragenen Stoffmenge ebenfalls als linear angenommen. 
+%Da von konstanten thermodynamischen Eigenschaften in der Membran ausgegangen wird, ist es für die Modellierung egal ob der Massenstrom oder der Stoffmengenstrom betrachtet wird. 
+Für den Stoffmengentransport ist aus physikalischen Membranmodellen die Gleichung 
+
+\begin{equation}
+ \dot{n}^{\prime\prime} = - c_{iM} * b_{iM} * \frac{d\mu_{iM}}{dz}
+\end{equation}
+
+wobei $\dot{n}^{\prime\prime}$ der Stoffmengenstrom über die Membran ist und $b_{iM}$ die Beweglichkeit der diffundierenden Moleküle. 
+% hier: Nernst-Einstein, evtl noch auf Fick eingehen
+Für den Diffusionsmassenstrom $J_{i}$ ergibt sich der Zusammenhang
+
+\begin{equation}
+J_{i} = -L_{i}*\frac{d\mu_{i}}{dx}
+\end{equation}
+
+wobei $L_{i}$ der Proportionalitätsfaktor ist.
+
+Das chemische Potential $\mu$ ist definiert als Summe aus einem druckabhängigen Potentialterm, einem Standardpotentialterm und einem konzentrationsabhängigen Potentialterm zu
+
+\begin{equation}
+\mu_{i}(T,p,c_{i}) = \mu_{i}°(T,p°) + RT*ln(a_{i}(T,p°,c_{i})) + v_{i}*(p-p°)
+\end{equation}
+
+
+wobei $P°$ der Standarddruck ist, $a_{i}$ die Aktivität des Stoffes $i$ und $v_{i}$ das Molvolumen des Stoffes $i$.
+
+
+Unter der Voraussetzung einer idealen Gasmischung entfällt der Druckterm
+
+\begin{equation}
+v_{i}*(p-p°)= 0
+\end{equation}
+
+In Untersuchungen von .... ist diese Annahme als angemessen bestätigt worden.
+%Quelle einfügen
+
+Der Standardpotentialterm $\mu_{i}°(T,p°)$ entfällt unter der Annahme von Isothermie entlang der z-Achse über die Membran. Da die Dichte Membran sehr dünn ist, ist diese Annahme möglich.
+% Quellenangabe, evtl. Quelle 8 aber auch die Treffen eigentlich diese Annahme auch wenn sie Stoff und Wärmtransport koppeln wollen
+
+Der konzentrationsabhängige Potentialterm hängt vor allem von der Aktivität der Diffundieren Komponente ab. Die Aktivität ist für Lösungen als
+\begin{equation}
+a_{i} = \gamma_{i}  * c_{i},
+\end{equation}
+
+definiert, wobei $\gamma_{i}$ der Aktivitätskoeffizient der Komponente $i$ ist. Der Aktivitätskoeffizient gibt das Verhältnis aus aktivem und realem Stoffmengenanteil und wird läuft so für kleine Konzentrationen gegen eins. Da eine dichte Membran betrachtet wird ist die Annahme sinnvoll.
+
+Daraus folgt, das der konzentrationsabhängige Potentialterm sich zu 
+
+\begin{equation}
+RT*ln(a_{i}(T,p°,c_{i})) = RT*ln(c_{i})
+\end{equation}
+
+vereinfacht.
+
+Unter den getroffenen Annahmen ergibt sich für den Stoffmengentransport durch die Membran die Gleichung
+%Detaillierter?
+\begin{equation}
+J_{i} = \frac{-L_{i}*RT}{c_{i}} * \frac{d\c_{i}}{dx}
+\end{equation}
+
+sodass sich unter Voraussetzung eines linearen Verteilung von $c_{i}$ über die z-Richtung der Membran ein linearer Zusammenhang des Stoffmengentransports von der Konzentrationsdifferenz mit einem Diffusionskoeffizienten $D_{i}$ beschreiben lässt:
+\begin{equation}
+J_{i} = D_{i} * \dfrac{c_{ifm}-c_{ipm}}{\delta}
+\end{equation}
+
+wobei $c_{ifm}$ und $c_{ipm}$ die Stoffmengenkonzentrationen in der feedseitigen beziehungsweise in der permeatseitigen Membranoberfläche darstellen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

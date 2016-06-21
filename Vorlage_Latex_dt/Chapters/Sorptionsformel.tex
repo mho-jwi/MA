@@ -1,0 +1,42 @@
+\documentclass[ 11pt
+				,ngerman
+				,headsepline
+				,headings=small
+				,numbers=noenddot %kein Punkt hinter letzter Gliederungsziffer Abschnitt 2.1 statt 2.1.
+				,draft=false
+				,BCOR=0mm %Wert für Bindekorrektur kann hier eingestellt werden
+				,DIV=12
+				,captions=tableheading
+				,paper=a4
+				,abstracton
+                ]{scrreprt}
+                
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel} %Anpassungen an nicht-englische Sprachen
+\usepackage{ifpdf} 
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage[cdot,thickqspace,squaren,textstyle]{SIunits} % SI-Einheiten sind als Befehle verfügbar
+
+\begin{document}
+\pagestyle{empty}
+Sorption an der Membranoberfläche
+\begin{equation}
+\theta = \omega_{max} / (1-C+C/\phi)
+\end{equation}
+Massenstrom durch Membran
+\begin{equation}
+J_{i} = R*T*L_{i}/C_{i}*dC_{i}/dx
+\end{equation}
+Parallelschaltung Widerstände
+\begin{equation}
+\frac{1}{W_{ges}} = \frac{1}{W_{d}} + \frac{1}{W_{p}}
+\end{equation}
+
+Stoffmengenstrom, Lösungs-Diffusions-Modell
+\begin{equation}
+\dot{n}^{\prime\prime} = - c_{kM} * b_{kM} * \frac{d\mu_{kM}}{dz} 
+\end{equation}
+\end{document}

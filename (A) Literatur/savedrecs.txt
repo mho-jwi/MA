@@ -1,0 +1,237 @@
+﻿FN Thomson Reuters Web of Science™
+VR 1.0
+PT J
+AU Li, Zhen-Xing
+   Zhong, Ting-Shu
+   Niu, Jian-Lei
+   Xiao, Fu
+   Zhang, Li-Zhi
+TI Conjugate heat and mass transfer in a total heat exchanger with
+   cross-corrugated triangular ducts and one-step made asymmetric membranes
+SO INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+VL 84
+BP 390
+EP 400
+DI 10.1016/j.ijheatmasstransfer.2015.01.032
+PD MAY 2015
+PY 2015
+TC 1
+ZB 0
+Z8 0
+ZR 0
+ZS 0
+Z9 1
+SN 0017-9310
+EI 1879-2189
+UT WOS:000351799000037
+ER
+
+PT J
+AU Huang, Si-Min
+   Zhang, Li-Zhi
+   Tang, Kai
+   Pei, Li-Xia
+TI Fluid flow and heat mass transfer in membrane parallel-plates channels
+   used for liquid desiccant air dehumidification
+SO INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+VL 55
+IS 9-10
+BP 2571
+EP 2580
+DI 10.1016/j.ijheatmasstransfer.2012.01.003
+PD APR 2012
+PY 2012
+TC 28
+ZB 0
+Z8 2
+ZR 0
+ZS 0
+Z9 30
+SN 0017-9310
+UT WOS:000302191100036
+ER
+
+PT J
+AU Zhang, Li-Zhi
+TI An analytical solution for heat mass transfer in a hollow fiber membrane
+   based air-to-air heat mass exchanger
+SO JOURNAL OF MEMBRANE SCIENCE
+VL 360
+IS 1-2
+BP 217
+EP 225
+DI 10.1016/j.memsci.2010.05.015
+PD SEP 15 2010
+PY 2010
+TC 14
+ZB 0
+Z8 2
+ZR 0
+ZS 0
+Z9 15
+SN 0376-7388
+UT WOS:000280311500026
+ER
+
+PT J
+AU Zhang, Li-Zhi
+TI Flow Maldistribution and Performance Deteriorations in Membrane-Based
+   Heat and Mass Exchangers
+SO JOURNAL OF HEAT TRANSFER-TRANSACTIONS OF THE ASME
+VL 131
+IS 11
+AR 111801
+DI 10.1115/1.3154832
+PD NOV 2009
+PY 2009
+TC 1
+ZB 0
+Z8 1
+ZR 0
+ZS 0
+Z9 2
+SN 0022-1481
+UT WOS:000270403200014
+ER
+
+PT J
+AU Zhang, Li-Zhi
+TI Heat and mass transfer in plate-fin enthalpy exchangers with different
+   plate and fin materials
+SO INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+VL 52
+IS 11-12
+BP 2704
+EP 2713
+DI 10.1016/j.ijheatmasstransfer.2008.12.014
+PD MAY 2009
+PY 2009
+TC 24
+ZB 0
+Z8 2
+ZR 0
+ZS 0
+Z9 26
+SN 0017-9310
+UT WOS:000265807200031
+ER
+
+PT J
+AU Zhang, Li-Zhi
+TI Coupled heat and mass transfer through asymmetric porous membranes with
+   finger-like macrovoids structure
+SO INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+VL 52
+IS 3-4
+BP 751
+EP 759
+DI 10.1016/j.ijheatmasstransfer.2008.07.029
+PD JAN 31 2009
+PY 2009
+TC 25
+ZB 1
+Z8 3
+ZR 0
+ZS 0
+Z9 26
+SN 0017-9310
+UT WOS:000262556200026
+ER
+
+PT J
+AU Zhang, Li-Zhi
+   Liang, Cai-Hang
+   Pei, Li-Xia
+TI Heat and moisture transfer in application scale parallel-plates enthalpy
+   exchangers with novel membrane materials
+SO JOURNAL OF MEMBRANE SCIENCE
+VL 325
+IS 2
+BP 672
+EP 682
+DI 10.1016/j.memsci.2008.08.041
+PD DEC 1 2008
+PY 2008
+TC 27
+ZB 0
+Z8 3
+ZR 0
+ZS 0
+Z9 29
+SN 0376-7388
+UT WOS:000262946800022
+ER
+
+PT J
+AU Zhang, Li-Zhi
+   Xiao, Fu
+TI Simultaneous heat and moisture transfer through a composite supported
+   liquid membrane
+SO INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+VL 51
+IS 9-10
+BP 2179
+EP 2189
+DI 10.1016/j.ijheatmasstransfer.2007.11.006
+PD MAY 2008
+PY 2008
+RI Xiao, Fu/F-7680-2014
+OI Xiao, Fu/0000-0002-3779-3943
+TC 24
+ZB 0
+Z8 1
+ZR 0
+ZS 0
+Z9 25
+SN 0017-9310
+UT WOS:000255811700006
+ER
+
+PT J
+AU Zhang, Li-Zhi
+TI Heat and mass transfer in a cross-flow membrane-based enthalpy exchanger
+   under naturally formed boundary conditions
+SO INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+VL 50
+IS 1-2
+BP 151
+EP 162
+DI 10.1016/j.ijheatmasstransfer.2006.06.025
+PD JAN 2007
+PY 2007
+TC 44
+ZB 0
+Z8 5
+ZR 0
+ZS 0
+Z9 49
+SN 0017-9310
+UT WOS:000242783300015
+ER
+
+PT J
+AU Zhang, LZ
+   Niu, JL
+TI Effectiveness correlations for heat and moisture transfer processes in
+   an enthalpy exchanger with membrane cores
+SO JOURNAL OF HEAT TRANSFER-TRANSACTIONS OF THE ASME
+VL 124
+IS 5
+BP 922
+EP 929
+DI 10.1115/1.1469524
+PD OCT 2002
+PY 2002
+RI Niu, Jianlei/H-8932-2012; Niu, Jianlei/
+OI Niu, Jianlei/0000-0002-1176-9179
+TC 42
+ZB 0
+Z8 2
+ZR 0
+ZS 0
+Z9 43
+SN 0022-1481
+UT WOS:000178281000014
+ER
+
+EF
