@@ -1,0 +1,8 @@
+Global (EP-LIB).vi
+    - The control expected to be at "G:\soft\labview\P4015\PG1105\Quellen\EP-LIB\Editor\IPolMethode.ctl" was loaded from "G:\soft\labview\P4015\PG1105\Helmut\060717\QUELLEN\EP-LIB\EDITOR\IPolMethode.ctl".
+    - The control expected to be at "G:\soft\labview\P4015\PG1105\Quellen\EP-LIB\Editor\Sensor.ctl" was loaded from "G:\soft\labview\P4015\PG1105\Helmut\060717\QUELLEN\EP-LIB\EDITOR\Sensor.ctl".
+    - The control expected to be at "G:\soft\labview\P4015\PG1105\Quellen\EP-LIB\Editor\Sensortyp.ctl" was loaded from "G:\soft\labview\P4015\PG1105\Helmut\060717\QUELLEN\EP-LIB\EDITOR\Sensortyp.ctl".
+SensorArray.ctl
+    - The control expected to be at "G:\soft\labview\P4015\PG1105\Quellen\EP-LIB\Editor\IPolMethode.ctl" was loaded from "G:\soft\labview\P4015\PG1105\Helmut\060717\QUELLEN\EP-LIB\EDITOR\IPolMethode.ctl".
+    - The control expected to be at "G:\soft\labview\P4015\PG1105\Quellen\EP-LIB\Editor\Sensor.ctl" was loaded from "G:\soft\labview\P4015\PG1105\Helmut\060717\QUELLEN\EP-LIB\EDITOR\Sensor.ctl".
+    - The control expected to be at "G:\soft\labview\P4015\PG1105\Quellen\EP-LIB\Editor\Sensortyp.ctl" was loaded from "G:\soft\labview\P4015\PG1105\Helmut\060717\QUELLEN\EP-LIB\EDITOR\Sensortyp.ctl".

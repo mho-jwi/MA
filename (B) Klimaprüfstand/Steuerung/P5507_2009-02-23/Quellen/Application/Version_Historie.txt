@@ -1,0 +1,38 @@
+
+***************************************************************************************************************
+Version 1.01 (13.05.2008)
+
+- Fehler in Start und Stop über die RS232-Schnittstelle behoben.
+- Fehler in der Mittelwertabfrage über die RS232-Schnittstelle behoben. 
+
+
+***************************************************************************************************************
+Version 1.02 (15.05.2008)
+
+- Digitale Eingänge hinzugefügt (DI0= START-Messung/DI1=STOP-Messung/DI2=Fehler qittieren)
+- Digitale Ausgänge hinzugefügt (DO0=Bereit/DO1=Prüfung ENDE/DO2=Störung)
+
+
+***************************************************************************************************************
+Version 1.03 (26.05.2008)
+
+- Schalter zur Hardwarekonfiguration in der LMF.ini Datei eingefügt
+	Bsp:	ABC_Messkarte=PCI-6221		/* Name der Messkarte
+		DBL_AI=4			/* Anzahl der analogen Eingänge
+		DBL_AO=1			/* -----"---- analogen Ausgänge
+		DBL_DI=0			/* -----"---- digitalen Eingänge
+		DBL_DO=0			/* -----"---- digitalen Ausgänge
+		ABC_Messelement=LFE		/* Auswahl des Messelementes (LFE/Düse/Vebturi)
+		DBL_Anzahl Messelement=3	/* Anzahl der Messelemente
+		Ring_MesselementMK0=0		/* Default Messelement für Messkreis 1
+		Ring_MesselementMK1=0		/* -----------"----------- Messkreis 2
+		T/F_RS232=TRUE			/* RS232-Schnittstelle (TRUE=aktiviert/FALSE=deaktiviert)
+- Umschaltung der Einheiten der analogen Eingänge und Berechneten Werte möglich
+- Speicherung bei Messmodus "Kontinuierlich" nur 65536 Zeilen möglich (Max. Anzahl Zeilen die in Excel eingelesen werden)
+- Anzeige für Messung möglich, d.h. drei Kanäle können ausgesucht werden die größer dargestellt werden
+- Autozero-Funktion in die Messmaske eingefügt
+- Auschalten der gesamten analogen Ausgänge möglich
+- Autozero-Funktion: Messwerte_holen.vi mit der Globalen Variable ersetzt
+
+
+***************************************************************************************************************

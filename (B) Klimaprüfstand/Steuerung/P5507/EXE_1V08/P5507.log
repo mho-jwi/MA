@@ -1,0 +1,125 @@
+18.04.2009	21:21:40	progstart	XXXX	Start Programm
+18.04.2009	21:21:42	progstart	7601	Schluessel in Sprachdatei nicht gefunden ### Key: 5300
+18.04.2009	21:21:42	progstart	7603	Fehler bei Uebersetzung Fehlertext
+18.04.2009	21:21:50	progstart	5060	Fehler NI PCI 6229, AO ### DAQmx Create Channel (AO-Voltage-Basic).vi:2<append>
+<B>Ger‰t: </B>Dev0
+<B>Name des physikalischen Kanals: </B>ao2
+
+<B>Task-Name: </B>task-6229-AO (-200170)
+18.04.2009	21:21:50	progstart	5001	Fehler Betrieb Datenerfassung
+18.04.2009	21:21:52	progstart	XXXX	Ende Programm
+18.04.2009	21:23:44	progstart	XXXX	Start Programm
+18.04.2009	21:25:14	progstart	XXXX	Start Programm
+18.04.2009	21:29:40	progstart	XXXX	Start Programm
+18.04.2009	21:30:32	progstart	XXXX	Start Programm
+18.04.2009	21:39:51	autologin	XXXX	Ende Programm
+20.04.2009	12:43:28	progstart	XXXX	Start Programm
+20.04.2009	12:43:32	autologin	6686	Fehler Eing‰nge Analog  ### CH 22  IST_31A1 (-0,01%)
+20.04.2009	12:43:49	autologin	XXXX	Ende Programm
+20.04.2009	12:44:33	progstart	XXXX	Start Programm
+20.04.2009	12:44:37	autologin	6686	Fehler Eing‰nge Analog  ### CH 22  IST_31A1 (-0,01%)
+20.04.2009	12:44:52	autologin	XXXX	Ende Programm
+20.04.2009	12:46:05	progstart	XXXX	Start Programm
+20.04.2009	12:46:10		6686	Fehler Eing‰nge Analog  ### CH 22  IST_31A1 (-0,01%)
+20.04.2009	12:48:12		XXXX	Ende Programm
+20.04.2009	14:31:45	progstart	XXXX	Start Programm
+20.04.2009	14:31:49	autologin	6686	Fehler Eing‰nge Analog  ### CH 22  IST_31A1 (-24,40%)
+20.04.2009	14:31:59	autologin	XXXX	Ende Programm
+20.04.2009	14:32:04	progstart	XXXX	Start Programm
+20.04.2009	14:32:08		6686	Fehler Eing‰nge Analog  ### CH 22  IST_31A1 (-0,01%)
+20.04.2009	14:34:25		XXXX	Ende Programm
+20.04.2009	14:34:32	progstart	XXXX	Start Programm
+20.04.2009	14:34:36	autologin	6686	Fehler Eing‰nge Analog  ### CH 22  IST_31A1 (-0,01%)
+20.04.2009	14:35:31	autologin	XXXX	Ende Programm
+20.04.2009	14:39:13	progstart	XXXX	Start Programm
+20.04.2009	14:40:46	autologin	XXXX	Ende Programm
+20.04.2009	14:41:31	progstart	XXXX	Start Programm
+20.04.2009	14:45:03	autologin	9059	Fehler Autozero, Offset zu groﬂ ###  (8,96 hPa) 
+20.04.2009	15:08:48	autologin	XXXX	Ende Programm
+20.04.2009	15:19:20	progstart	XXXX	Start Programm
+20.04.2009	18:11:32	autologin	XXXX	Ende Programm
+21.04.2009	10:04:37	progstart	XXXX	Start Programm
+21.04.2009	18:54:53	autologin	XXXX	Ende Programm
+22.04.2009	13:44:48	progstart	XXXX	Start Programm
+22.04.2009	17:17:15	autologin	XXXX	Ende Programm
+27.04.2009	11:01:12	progstart	XXXX	Start Programm
+27.04.2009	11:08:51	autologin	XXXX	Ende Programm
+27.04.2009	14:21:24	progstart	XXXX	Start Programm
+27.04.2009	17:24:17	autologin	XXXX	Ende Programm
+27.04.2009	17:24:34	progstart	XXXX	Start Programm
+27.04.2009	17:30:16	autologin	XXXX	Ende Programm
+27.04.2009	17:34:02	progstart	XXXX	Start Programm
+27.04.2009	18:02:24	autologin	XXXX	Ende Programm
+28.04.2009	09:35:48	progstart	XXXX	Start Programm
+28.04.2009	11:24:03	autologin	XXXX	Ende Programm
+28.04.2009	14:40:35	progstart	XXXX	Start Programm
+28.04.2009	15:07:50	autologin	XXXX	Ende Programm
+29.04.2009	10:04:16	progstart	XXXX	Start Programm
+29.04.2009	11:28:34	autologin	XXXX	Ende Programm
+29.04.2009	11:31:40	progstart	XXXX	Start Programm
+29.04.2009	11:55:24	autologin	XXXX	Ende Programm
+29.04.2009	12:36:04	progstart	XXXX	Start Programm
+29.04.2009	18:44:51	autologin	XXXX	Ende Programm
+30.04.2009	08:28:00	progstart	XXXX	Start Programm
+30.04.2009	17:00:30	autologin	XXXX	Ende Programm
+04.05.2009	14:15:50	progstart	XXXX	Start Programm
+04.05.2009	15:53:32	autologin	XXXX	Ende Programm
+04.05.2009	15:59:57	progstart	XXXX	Start Programm
+04.05.2009	17:48:49	autologin	XXXX	Ende Programm
+05.05.2009	08:42:27	progstart	XXXX	Start Programm
+05.05.2009	16:03:15	autologin	XXXX	Ende Programm
+05.05.2009	16:10:22	progstart	XXXX	Start Programm
+05.05.2009	16:16:14	autologin	XXXX	Ende Programm
+06.05.2009	14:33:06	progstart	XXXX	Start Programm
+06.05.2009	16:30:58	autologin	XXXX	Ende Programm
+06.05.2009	16:31:39	progstart	XXXX	Start Programm
+06.05.2009	16:31:48	autologin	XXXX	Ende Programm
+06.05.2009	16:31:52	progstart	XXXX	Start Programm
+06.05.2009	16:32:04	autologin	XXXX	Ende Programm
+06.05.2009	16:32:10	progstart	XXXX	Start Programm
+06.05.2009	16:34:10	progstart	XXXX	Start Programm
+06.05.2009	18:20:30	autologin	XXXX	Ende Programm
+06.05.2009	18:20:40	progstart	XXXX	Start Programm
+06.05.2009	18:27:38	Administrator	9059	Fehler Autozero, Offset zu groﬂ ###  (1,09 hPa) 
+06.05.2009	18:33:20	Administrator	XXXX	Ende Programm
+06.05.2009	18:55:01	progstart	XXXX	Start Programm
+06.05.2009	18:57:36	Administrator	XXXX	Ende Programm
+06.05.2009	18:57:44	progstart	XXXX	Start Programm
+06.05.2009	19:14:26	Einrichter	XXXX	Ende Programm
+07.05.2009	10:39:29	progstart	XXXX	Start Programm
+07.05.2009	10:41:28	autologin	XXXX	Ende Programm
+07.05.2009	13:45:04	progstart	XXXX	Start Programm
+07.05.2009	18:03:29	autologin	XXXX	Ende Programm
+07.05.2009	18:03:43	progstart	XXXX	Start Programm
+07.05.2009	18:04:33	autologin	XXXX	Ende Programm
+08.05.2009	12:58:51	progstart	XXXX	Start Programm
+08.05.2009	12:59:13	autologin	XXXX	Ende Programm
+08.05.2009	12:59:16	progstart	XXXX	Start Programm
+11.05.2009	15:06:42	progstart	XXXX	Start Programm
+11.05.2009	17:57:44	autologin	XXXX	Ende Programm
+12.05.2009	16:46:16	progstart	XXXX	Start Programm
+12.05.2009	17:19:21	autologin	XXXX	Ende Programm
+13.05.2009	08:44:46	progstart	XXXX	Start Programm
+13.05.2009	12:46:03	autologin	XXXX	Ende Programm
+18.05.2009	15:47:59	progstart	XXXX	Start Programm
+18.05.2009	15:50:54	autologin	XXXX	Ende Programm
+18.05.2009	15:54:23	progstart	XXXX	Start Programm
+18.05.2009	17:35:14	autologin	XXXX	Ende Programm
+19.05.2009	13:27:15	progstart	XXXX	Start Programm
+19.05.2009	17:25:22	autologin	XXXX	Ende Programm
+19.05.2009	17:26:38	progstart	XXXX	Start Programm
+19.05.2009	18:10:32	autologin	XXXX	Ende Programm
+20.05.2009	08:29:59	progstart	XXXX	Start Programm
+20.05.2009	16:25:33	autologin	XXXX	Ende Programm
+03.06.2009	16:13:12	progstart	XXXX	Start Programm
+04.06.2009	15:05:12	progstart	XXXX	Start Programm
+04.06.2009	15:25:17	autologin	XXXX	Ende Programm
+08.06.2009	16:42:16	progstart	XXXX	Start Programm
+08.06.2009	16:54:05	autologin	XXXX	Ende Programm
+08.06.2009	16:58:22	progstart	XXXX	Start Programm
+08.06.2009	17:04:44	autologin	XXXX	Ende Programm
+08.06.2009	17:04:48	progstart	XXXX	Start Programm
+08.06.2009	18:02:30	autologin	XXXX	Ende Programm
+17.06.2009	09:55:26	progstart	XXXX	Start Programm
+17.06.2009	09:55:50	autologin	XXXX	Ende Programm
+

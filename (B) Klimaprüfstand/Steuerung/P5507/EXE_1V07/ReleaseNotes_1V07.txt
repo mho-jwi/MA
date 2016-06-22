@@ -1,0 +1,36 @@
+V1.07 Release Notes:
+- Umrechnung absolute in relative Feuchte und umgekehrt nach IAPWS (Kundenwunsch) <OPL14>
+
+- Überschreiber Analogausgänge VIPA <OPL9>
+
+- Diverse kleinere Korrekturen <OPL6>
+	- Istwertanzeige EGAS entfernt (da kein Kanal)
+	- Istwertanziege Trockner entfernt (da kein Kanal)
+	- Zahlenformat WH Gebäude umgestellt
+	- Leistung Heizer AHU1 korrigiert auf 4 kW
+	- Beschriftung NAHU2 korrigiert
+	- Benennung der DI-Kanäle (insb. Störmeldungen) überarbeitet
+	- M1 AHU2 als „Leistung“ und als reine Anzeige
+	- AI-Simulator unsichtbar wenn Hardware vorhanden
+
+- Trocknerleistung vorwählbar 0-25-50-75-100% <OPL13>
+
+- Regler NTPA hält an wenn Klappen V2 und V3 geschlossen und startet automatisch wenn V2 oder V3 offen; V4,V5,V6 auf Kundenwunsch nicht berücksichtigt! <OPL1>
+
+- Regler NTPB hält an wenn Klappe V2 und startet automatisch wenn V2 offen  <OPL1>
+
+- Reglerverhalten NTPx bei Zustandsübergängen optimiert
+
+- Strömungserkennung: Bei Vorwarnung Heizer wird T-Regler abgeschaltet und Sollwerte –20 für Heizer und 60 für Kühler vorgegeben <OPL2,3>
+
+- Regler für Klimatisierung Gebäude starten nur durch neue Sollwertvorgabe und nur, wenn V3 oder V4 sowie V5 oder V6 geöffnet sind (nach Absprache Kunde) <OPL2,3>
+
+- FU wird bei Start des Druckreglers eingeschaltet; Druckregler schaltet mit FU Button ein oder aus <OPL12>
+
+- Alle Aktoren aus wenn Regler aus <OPL3>
+
+- Störungsanzeige (Sammelstörung) in Messmaske <OPL11>
+
+
+
+03.06.2009 EP/CHL

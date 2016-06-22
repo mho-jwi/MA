@@ -1,0 +1,1086 @@
+++++++++++++++++++++Fehler++++++++++++++++++++
+###5000###
+Fehler Initialisierung Datenerfassung
+###5001###
+Fehler Betrieb Datenerfassung
+###5002###
+Fehler Schließen Datenerfassung
+###5003###
+Fehler Mittelwertbildung
+###5004###
+Fehler AI Messwert Queue
+###5005###
+Fehler AI Rohwert Queue
+###5006###
+Fehler AO Messwert Queue
+###5007###
+Fehler AI Messwert lesen
+###5008###
+Fehler AI alle Messwert lesen
+###5009###
+Fehler AI alle Rohwerte lesen
+###5010###
+Fehler AI Rohwert lesen
+###5011###
+Fehler AI Filterung (Butterworth)
+###5012###
+Fehler Mittelwertbildung 1 Kanal
+###5013###
+Fehler Mittelung 1 kHz
+###5014###
+Fehler AI in Puffer schreiben
+###5015###
+Fehler AI alle Messwert lesen (ohne MW)
+###5016###
+Fehler AI variabel mitteln
+###5050###
+Fehler NI PCI 6014, AO
+###5051###
+Fehler NI PCI 6014, AI
+###5060###
+Fehler NI PCI 6229, AO
+###5061###
+Fehler NI PCI 6229, AI
+###5062###
+Fehler NI PCI 6229, DI
+###5063###
+Fehler NI PCI 6229, DO
+###5100###
+Fehler NI PCI Counter
+###5150###
+Fehler NI PCI GPIB
+###5300###
+Fehler Profibus
+###5301###
+Fehler Profibus Server
+###5550###
+Fehler RS232
+###6000###
+Fehler EP-Flow Bibliothek
+###6001###
+Fehler Durchflussberechnung LFE
+###6002###
+Fehler Durchflussberechnung Düse
+###6003###
+Fehler Durchflussberechnung Venturi
+###6004###
+Fehler Viskositaetsrechnung feuchte Luft
+###6100###
+Fehler Dichterechnung feuchter Luft
+###6050###
+Dichte: Ungültige Gasart.
+###6051###
+Dichte: P oder T ist Null!
+###6060###
+Viskosität: Ungültige Gasart
+###6061###
+Viscosität: Temperatur<= 0 K!
+###6070###
+Isentropenexponent: Ungültige Gasart!
+###6071###
+Expansion: Parameter ist null!
+###6072###
+Reynoldszahl außerhalb Messbereich
+###6500###
+Fehler Editor
+###6630###
+Einheiten_SIValue_To_UnitValue.vi: Fehler bei Eingangsparameter
+###6631###
+Einheiten_UnitValue_To_SIValue.vi: Fehler bei Eingangsparameter
+###6632###
+Einheiten_Struktur_Array_CheckDuplicates: Fehler Leeres Einheiten-Array
+###6633###
+Einheiten_Struktur_Array_CheckDuplicates: Fehler Einheiten doppelt vergeben
+###6650###
+LFEArraySetzeEinheitenWerte: Fehler Eingangsarray leer
+###6651###
+LFEArraySetzeEinheitenWerte: Fehler bei LFESetzeEinheitenWerte
+###6652###
+LFEDateiLesenSchreiben: Fehler beim Lesen
+###6653###
+LFEDateiLesenSchreiben: Fehler beim Schreiben
+###6654###
+LFEDateiLesenSchreibenAlle: Fehler leeres LFEArray
+###6655###
+LFEDateiLesenSchreibenAlle: Fehler bei LFELesen
+###6656###
+LFEDateiLesenSchreibenAlle: Fehler bei LFESchreiben
+###6664###
+LFEListeInit: LFE-Array leer
+###6665###
+LFEListeInit: Fehler bei Einheiten setzen
+###6670###
+SkaliererArraySetzeEinheitenWerte: Fehler Eingangsarray leer
+###6671###
+SkaliererArraySetzeEinheitenWerte: Fehler bei SkaliererSetzeEinheitenWerte
+###6672###
+SkaliererDateiLesenSchreiben: Fehler beim Lesen
+###6673###
+SkaliererDateiLesenSchreiben: Fehler beim Schreiben
+###6674###
+SkaliererDateiLesenSchreibenAlle: Fehler leeres Sensorarray
+###6675###
+SkaliererDateiLesenSchreibenAlle: Fehler bei SkaliererLesen
+###6676###
+SkaliererDateiLesenSchreibenAlle: Fehler bei SkaliererSchreiben
+###6677###
+SkaliererInValToOutVal: Fehlendes Rechenverfahren
+###6678###
+SkaliererInValToOutVal: LinearPunktzuPunkt Fehler bei Eingangsarray
+###6679###
+SkaliererInValToOutVal: KoeffizientenAuto Fehler bei Eingangsarray
+###6680###
+SkaliererInValToOutVal: KoeffizientenManuell Fehler bei Eingangsarray
+###6681###
+SkaliererInValToOutVal: Fehler bei Rechnung Linear Punkt zu Punkt
+###6682###
+SkaliererLineareInterpolation: Eingangsarray(s) leer
+###6683###
+SkaliererLineareInterpolation: Eingangsarray x nicht streng stetig steigend
+###6684###
+SkaliererListeInit: LFE-Array leer
+###6685###
+SkaliererListeInit: Fehler bei Einheiten setzen
+###6686###
+Fehler Eingänge Analog
+###6687###
+SensorSetzeEinheitenWerte: Einheiten nicht gefunden
+###6688###
+SkaliererZuordnungExtractElement: Skalierer Verwendung unbekannt
+###6689###
+SkaliererZuordnungExtractElement: Kanalnummer außerhalb Bereich
+###6690###
+SkaliererZuordnungExtractGroup: Skalierer Verwendung unbekannt
+###6691###
+SkaliererZuordnungFindeEintrag: SensorIndex außerhalb Bereich
+###6692###
+Skalierung AI: Fehler bei Skalierung AI-Kanäle
+###6693###
+Skalierung AO: Fehler bei Skalierung AO-Kanäle
+###6694###
+Skalierung AI: Fehler Array-Göße ungleich
+###6695###
+Skalierung AO: Fehler Array-Göße ungleich
+###6696###
+Skalierung AO-VIPA: Fehler Array-Göße ungleich
+###6750###
+DüseArraySetzeEinheitenWerte: Fehler Eingangsarray leer
+###6751###
+DüseArraySetzeEinheitenWerte: Fehler bei DüseSetzeEinheitenWerte
+###6752###
+DüseDateiLesenSchreiben: Fehler beim Lesen
+###6753###
+DüseDateiLesenSchreiben: Fehler beim Schreiben
+###6754###
+DüseDateiLesenSchreibenAlle: Fehler leeres DüseArray
+###6755###
+DüseDateiLesenSchreibenAlle: Fehler bei DüseLesen
+###6756###
+DüseDateiLesenSchreibenAlle: Fehler bei DüseSchreiben
+###6764###
+DüseListeInit: Düse-Array leer
+###6765###
+DüseListeInit: Fehler bei Einheiten setzen
+###6764###
+
+###6800###
+Fehler Regler (allgemein)
+###6801###
+Fehler Regler Init (Application)
+###6802###
+ReglerDateiLesenSchreiben (EP-LIB): Fehler beim Lesen
+###6803###
+ReglerDateiLesenSchreiben (EP-LIB): Fehler beim Schreiben
+###6804###
+ReglerDateiLesenSchreiben (Appl.): Fehler beim Lesen
+###6805###
+ReglerDateiLesenSchreiben (Appl.): Fehler beim Schreiben
+###6806###
+Regler AO-Kanal Handler (Appl.): Fehler AI Index zu gross
+###6807###
+Regler AO-Kanal Handler (Appl.): Fehler bei Handling AO-Kanäle
+###6808###
+Regler (Applikation): Fehler bei Regler (Appl.)
+###6809###
+Regler (EP-LIB): Fehler bei Regler (EP-LIB)
+###6809###
+Diagnose: Fehler bei Speichern Reglerdaten
+###7000###
+Fehler Konfiguration
+###7050###
+SkaliererAutozero (Appl.): Fehler bei Autozero
+###7051###
+SkaliererLFEInitialisieren(Application): Fehler bei Initialisierung LFE/Skaliererdaten
+###7052###
+SkaliererListeInit(Application): Fehler bei Init
+###7061###
+SkaliererDüseInitialisieren(Application): Fehler bei Initialisierung Düse/Skaliererdaten
+###7062###
+
+###7500###
+Fehler Passwort
+###7550###
+Passwort Anmeldung Check: Fehler bei Laden Passwort
+###7600###
+Fehler Sprache Main
+###7601###
+Fehler beim lesen der Sprachdatei
+###7602###
+Schluessel in Sprachdatei nicht gefunden
+###7603###
+Fehler bei Uebersetzung Fehlertext
+###7604###
+Fehler bei Uebersetzung Meldungstext
+###7605###
+Fehler bei Uebersetzung Menütext
+###7606###
+Fehler bei Uebersetzung Oberflaeche
+###7700###
+Fehler Fenster Status aendern
+###7701###
+Fehler Funktionstasten aktivieren bzw. deaktivieren
+###7800###
+Fehler Programm-Ini lesen
+###7801###
+Fehler Konfiguration lesen
+###7802###
+Fehler Konfiguration schreiben
+###7900###
+Fehler Meldung Log-Datei speichern
+###7901###
+Fehler alle Fehler in Log-Datei speichern
+###9000###
+1. Anwendungsfehler
+###9001###
+Fehler Parameter Konfiguration lesen
+###9050###
+Fehler LFE-Rechnung
+###9051###
+Fehler LFE-Rechnung für AO
+###9052###
+Fehler Maske aktualisieren
+###9053###
+Fehler Messwerte holen
+###9054###
+Fehler Messwerte puffern bei Messung
+###9055###
+Fehler Dichte-Rechnung
+###9056###
+Fehler Rechnung Messung komplett
+###9057###
+Fehler Messdaten aufbereiten
+###9058###
+Fehler Ergebnis speichern
+###9059###
+Fehler Autozero, Offset zu gross
+###9060###
+Fehler Pfad für Ergebnisse nicht gefunden
+###9061###
+Fehler Messwerte bearbeiten und puffern
+###9062###
+Fehler bei Einstellung Prüfdruck
+###9070###
+Fehler Düse Rechnung
+###9080###
+Fehler VMF Rechnung
+###9100###
+Fehler DAQ-Server instabil
+###9999###
+Letzter Anwendungsfehler
+###
+++++++++++++++++++++Meldungen++++++++++++++++++++
+###10000###
+Initialisierung, bitte warten ...
+###
+++++++++++++++++++++Menue++++++++++++++++++++
+###Tag1###
+Menue-Eintrag 1
+###Tag1-1###
+Menue-Eintrag 1-1
+###Tag2###
+Menue-Eintrag 2
+###
+++++++++++++++++++++Oberflaeche++++++++++++++++++++
+++++++++++Hauptmaske++++++++++
+###< F1 >###
+Messung
+###< F2 >###
+Fehler\nquittieren
+###< F3 >###
+Login
+###< F4 >###
+Konfiguration
+###< F5 >###
+Diagnose
+###< F6 >###
+
+###< F7 >###
+
+###< F8 >###
+
+###< F9 >###
+
+###< F10 >###
+Info
+###< F11 >###
+
+###< F12 >###
+Ende
+###Name-Maske###
+Hauptmaske
+###Text Passwort###
+Login: Bitte Name und Passwort eingeben
+###Name###
+Name
+###Passwort###
+Passwort
+###Fertig EIN###
+Fertig
+###Fertig AUS###
+Fertig
+###
+++++++++++Messung++++++++++
+###< F1 >###
+Neue Werte\neinregeln
+###< F2 >###
+Neue Werte\nverwerfen
+###< F3 >###
+
+###< F4 >###
+Fehler\nquittieren
+###< F5 >###
+Fernsteuerung\nnicht aktiv
+Fernsteuerung\naktiv
+###< F6 >###
+QV-Regelung\naktiv
+DP-Regelung\naktiv
+###< F7 >###
+
+###< F8 >###
+
+###< F9 >###
+
+###< F10 >###
+Anlage\nherunterfahren
+###< F11 >###
+Diagnose
+###< F12 >###
+zurück
+###Name-Maske###
+Messung Maske
+###Name-Tab-1###
+Analoge Werte
+###Name-Tab-2###
+Digitale Werte
+###Name-Tab-3###
+Berechnete Werte
+###Name-Tab-4###
+RS232-Schnittstelle
+###Messung (T)###
+Messung
+###Auswahl-Element 1###
+Auswahl
+Messelement
+###MWModus###
+Modus:
+###Messzeit###
+Messzeit [s]
+###Kommentar###
+Kommentar
+###Ergebnispfad###
+Ergebnispfad
+###Analoge Eingänge###
+Analoge Eingänge
+###Kanal Analog###
+Kanal
+###Autozero###
+Autozero
+###Analog Ausgang###
+Analoge Ausgänge
+###AO_Aktiv###
+Analog Ausgänge
+###Berechnete Werte###
+Berechnete Werte
+###Write RS232###
+Write RS232
+###Read RS232###
+Read RS232
+###Digitale Eingänge###
+Digitale Eingänge
+###Digitale Ausgänge###
+Digitale Ausgänge
+###MWModus_Kontinuierlich###
+Kontinuierlich
+###MWModus_Mittelwert###
+Mittelwert
+###AO_Aktiv_eingeschaltet###
+aktiviert
+###AO_Aktiv_abgeschaltet###
+deaktiviert
+###Messung (T)_ein###
+Messung EIN
+###Messung (T)_aus###
+Messung AUS
+###Autozero_aktiv###
+Autozero wird berechnet
+###Autozero_deaktiviert###
+Autozero
+###
+++++++++++Konfiguration++++++++++
+###< F1 >###
+
+###< F2 >###
+Speichern
+###< F3 >###
+
+###< F4 >###
+
+###< F5 >###
+Passwort
+###< F6 >###
+
+###< F7 >###
+
+###< F8 >###
+
+###< F9 >###
+
+###< F10 >###
+
+###< F11 >###
+
+###< F12 >###
+zurück
+###Name-Maske###
+Konfiguration Maske
+###Name-Tab-1###
+Allgemein
+###Name-Tab-2###
+Messkreis
+###Name-Tab-3###
+RS232-Schnittstelle
+###Samplingrate-pro-Kanal###
+Samplingrate pro Kanal
+###Samples-pro-Kanal###
+Samples pro Kanal
+###Aktualisierung-Maske-Messung_Hz###
+Aktualisierung Maske Messung [Hz]
+###NormBed_PA_hPa###
+Absolutdruck [hPa]
+###NormBed_T_C###
+Temperatur [°C]
+###NormBed_rF_Proz###
+Realtive Feuchte [%]
+###Text_Normbedingungen###
+Normbedingungen
+###Grenzfrequenz_Filter_Hz###
+Filter Tiefpaß Grenzfrequenz [Hz]
+###Filter_Ordnung###
+Filter Ordnung
+###Filter_ein_T###
+Filter aktiv
+###Text_Standard###
+Standardwerte für Messung
+###Messzeit_s###
+Messzeit [s]
+###Messung_PRTP_hPa###
+Relativdruck Prüfling [hPa]
+###Zeitraster_ms###
+Zeitraster [ms]
+###PR-Umsch-LFE-ND-HD_hPa###
+Relativdruck Prüfling für Umschaltung Kennlinie LFE (ND nach HD) [hPa]
+###Ergebnispfad###
+Ergebnispfad
+###Mittelwertbildung###
+Anzahl Messwerte zur
+Mittelwertbildung
+###COM-Port###
+COM-Schnittstelle
+###Data bits###
+Datenbits
+###Parity###
+Parity
+###Stop bits###
+Stop-Bit
+###Flow control###
+Handshake
+###Stringendzeichen###
+Endzeichen
+###Echo (Rückmeldung)###
+Rückmeldung
+###Baud rate###
+Baud rate
+###
+++++++++++Diagnose++++++++++
+###< F1 >###
+Start/\nStop
+###< F2 >###
+Wechsel\nMessmodus
+###< F3 >###
+Kalibrierung\nAnalog-Eingänge
+###< F4 >###
+Kalibrierung\nAnalog-Ausgänge
+###< F5 >###
+Dateneingabe\nMesselement
+###< F6 >###
+Kalibrierung\nAnalog-VIPA
+###< F7 >###
+
+###< F8 >###
+
+###< F9 >###
+
+###< F10 >###
+
+###< F11 >###
+Messungs\nMaske
+###< F12 >###
+zurück
+###Name-Maske###
+Diagnose
+###Name-Tab-1###
+Analoge Werte
+###Name-Tab-2###
+Digital Kanäle
+###Name-Tab-3###
+DI/DO VIPA
+###Name-Tab-4###
+Analog VIPA
+###Name-Tab-5###
+Düse
+###Name-Tab-6###
+LFE
+###Name-Tab-7###
+Venturi
+###Name-Tab-8###
+Regler
+###Analoge Eingänge###
+Analoge Eingänge
+###Analoge Ausgänge###
+Analoge Ausgänge
+###Mittelwertzeit###
+Sollzeit [s]
+###MWRestzeit###
+Restzeit [s]
+###MWModus###
+Modus:
+###MWModus_Kontinuierlich###
+Kontinuierlich
+###MWModus_Mittelwert###
+Mittelwert
+###Kanal Analog###
+Kanal
+###Analog setzen_abgeschaltet###
+Analoge Ausgänge
+abgeschaltet
+###Analog setzen_eingeschaltet###
+Analoge Ausgänge
+eingeschaltet
+###AI Wert SI###
+AI Wert
+###AI Wert Volt###
+AI Wert V
+###Kanal Analog Out###
+Kanal
+###Digitale Eingänge###
+Digitale Eingänge
+###Digitale Ausgänge###
+Digitale Ausgänge
+###Kanal Auswahl###
+Kanal
+###Digital setzen_abgeschaltet###
+Digitale Ausgänge
+abgeschaltet
+###Digital setzen_eingeschaltet###
+Digitale Ausgänge
+eingeschaltet
+###Achtung_DO###
+Digitale Ausgänge sind nicht gegenseitig verriegelt!
+###LFE Num###
+LFE-Datensatz
+###LFE-Kürzel###
+LFE-Kürzel
+###LFE-Typ###
+LFE-Typ
+###LFE-Seriennummer###
+LFE-Seriennummer
+###LFE-Kommentar###
+LFE-Kommentar
+###QvLFE###
+Qv
+###QmLFE###
+Qm
+###QnLFE###
+Qn
+###Düse Num###
+Düse-Datensatz
+###Düse-Kürzel###
+Düse-Kürzel
+###Düse-Typ###
+Düse-Typ
+###Düse-Seriennummer###
+Düse-Seriennummer
+###Düse-Kommentar###
+Düse-Kommentar
+###QvDüse###
+Qv [m³/h]
+###QmDüse###
+Qm [kg/h]
+###QnDüse###
+Qn [m³/h]
+###Venturi Num###
+Venturi-Datensatz
+###Venturi-Kürzel###
+Venturi-Kürzel
+###Venturi-Typ###
+Venturi-Typ
+###Venturi-Seriennummer###
+Venturi-Seriennummer
+###Venturi-Kommentar###
+Venturi-Kommentar
+###QvVenturi###
+Qv [m³/h]
+###QmVenturi###
+Qm [kg/h]
+###QnVenturi###
+Qn [m³/h]
+###Regler P-Anteil###
+P
+###Regler I-Anteil###
+I
+###Regler D-Anteil###
+D
+###I Limit Aktiv###
+I Limit Aktiv
+###I Limit High###
+I Limit Oben
+###I Limit Low###
+I Limit Unten
+###Out Limit Aktiv###
+Limit Aktiv
+###Out Limit High###
+Limit Oben
+###Out Limit Low###
+Limit Unten
+###Regler Kanal In###
+Kanal
+###Kanal In Max###
+Oben
+###Kanal In Min###
+Unten
+###Regler Kanal Out###
+Kanal
+###Kanal Out Max###
+Oben
+###Kanal Out Min###
+Unten
+###Kanal Out Limit Aktiv###
+Limit Aktiv
+###Kanal Out Limit Max###
+Limit Oben
+###Kanal Out Limit Min###
+Limit Unten
+###Regler Modus###
+Regler Modus
+###Sollwert###
+Sollwert
+###Istwert###
+Istwert
+###Stellwert###
+Stellwert
+###Regler Num###
+Datensatz
+###Autozero###
+Autozero
+###Temp Num###
+Datensatz
+###
+++++++++++Editor++++++++++
+###Name-Maske###
+Analog-Editor
+###Tab Control_Allgemeines###
+Allgemeines
+###Tab Control_Kenndaten###
+Kenndaten
+###Tab Control_Stuetzstellen###
+Stützstellen
+###Sensortyp###
+Sensortyp
+###Skaliererverwendung###
+Kanaltyp
+###Skalierer Bezeichnung###
+Bezeichnung
+###Skalierer Seriennummer###
+Seriennummer
+###Skalierer Kürzel###
+Kürzel
+###Skalierer Kommentar###
+Kommentar
+###Letzte Speicherung###
+Letzte Speicherung
+###Letzte Kalibrierung###
+Letzte Kalibrierung
+###IPolMethode###
+Interpolations-Methode
+###Physikalische Groesse Ein###
+Physikalische Groesse Ein
+###Physikalische Groesse Aus###
+Physikalische Groesse Aus
+###Einheiten String Ein###
+Einheiten String Ein
+###Einheiten String Aus###
+Einheiten String Aus
+###Koeff Manuell Grad###
+Koeff Manuell Grad
+###Koeff Manuell Array###
+Koeff Manuell
+###Gain###
+Gain
+###Offset###
+Offset
+###PhysDefault###
+Phys.Default
+###AutoOffset###
+Auto Offset
+###Wert Min###
+Begrenzung Min
+###Wert Max###
+Begrenzung Max
+###CheckAktiv###
+Begrenzung Aktiv
+###Str_CheckAktiv_Ja###
+Ja
+###Str_CheckAktiv_Nein###
+Nein
+###Stuetzstellen Anzahl###
+Anz.
+###Nachkommastellen X###
+NK
+###AnzeigeartX###
+Anzeigeart
+###XArrayOK###
+Stützstellen OK
+###Nachkommastellen Y###
+NK
+###AnzeigeartY###
+Anzeigeart
+###YArrayOK###
+Stützstellen OK
+###Koeff Auto Grad###
+Koeff. Auto Grad
+###Koeff Auto Array###
+Koeff. Auto
+###Koeff Auto OK###
+Koeff. Auto OK
+###IPol_Linear Punkt zu Punkt###
+Linear Punkt zu Punkt
+###IPol_Koeffizienten auto###
+Koeffizienten auto
+###IPol_Koeffizienten manuell###
+Koeffizienten manuell
+###AnzArt_Gleitpunktzahl###
+Gleitpunktzahl
+###AnzArt_Scientific###
+Scientific
+###AnzArt_Engineering###
+Engineering
+###Ph_Gr_Druck###
+Druck
+###Ph_Gr_Volumenstrom###
+Volumenstrom
+###Ph_Gr_Massenstrom###
+Massenstrom
+###Ph_Gr_Dichte###
+Dichte
+###Ph_Gr_Dyn. Viskosität###
+Dyn. Viskosität
+###Ph_Gr_Temperatur###
+Temperatur
+###Ph_Gr_Druckänderung pro Zeit###
+Druckänderung pro Zeit
+###Ph_Gr_Zeit###
+Zeit
+###Ph_Gr_Volumen###
+Volumen
+###Ph_Gr_Masse###
+Masse
+###Ph_Gr_Feuchte###
+Feuchte
+###Ph_Gr_Spannung###
+Spannung
+###Ph_Gr_Strom###
+Strom
+###Ph_Gr_elekr. Widerstand###
+elekr. Widerstand
+###Ph_Gr_Länge###
+Länge
+###Ph_Gr_Geschwindigkeit###
+Geschwindigkeit
+###Ph_Gr_Beschleunigung###
+Beschleunigung
+###Ph_Gr_Normvolumenstrom###
+Normvolumenstrom
+###Ph_Gr_Leistung###
+Leistung
+###< F1 >###
+
+###< F2 >###
+Zeile löschen
+###< F3 >###
+Zeile davor\neinfügen
+###< F4 >###
+Zeile danach\neinfügen
+###< F5 >###
+Speichern
+###< F6 >###
+
+###< F7 >###
+
+###< F8 >###
+
+###< F9 >###
+
+###< F10 >###
+
+###< F11 >###
+
+###< F12 >###
+zurück
+###
+++++++++++LFE-Editor++++++++++
+###< F1 >###
+
+###< F2 >###
+
+###< F3 >###
+
+###< F4 >###
+
+###< F5 >###
+Speichern
+###< F6 >###
+zurück
+###Name-Maske###
+LFE-Editor
+###Name-Tab-1###
+Allgemeines
+###Name-Tab-2###
+Kenndaten
+###Name-Tab-3###
+Sensorzuordnung
+###LFE Kürzel###
+LFE-Kürzel
+###Typ LFE###
+LFE-Typ
+###Seriennummer LFE###
+LFE-Seriennummer
+###Kommentar LFE###
+LFE-Kommentar
+###Eingabe LFE###
+Kalibrierdatum
+###Änderung LFE###
+Änderungsdatum
+###Pol-Skal-Xs LFE###
+Eingangsskalierung Xs
+###Pol-Skal-Ys LFE###
+Ausgangsskalierung Ys
+###A0 - A3 LFE###
+Koeffizienten (in SI) A0, A1, A2, A3
+###Berechnungsart LFE###
+Berechnungsart
+###Kanal Pdiff###
+Kanal Differenzdruck
+###Kanal Pabs###
+Kanal Absolutdruck
+###Kanal T###
+Kanal Temperatur
+###Kanal rH###
+Kanal relative Feuchte
+###
+++++++++++Düse-Editor++++++++++
+###< F1 >###
+
+###< F2 >###
+
+###< F3 >###
+
+###< F4 >###
+
+###< F5 >###
+Speichern
+###< F6 >###
+zurück
+###Name-Maske###
+Düse-Editor
+###Name-Tab-1###
+Allgemeines
+###Name-Tab-2###
+Kenndaten
+###Name-Tab-3###
+Sensorzuordnung
+###Düse Kürzel###
+Düse-Kürzel
+###Düse-Typ###
+Typ-Düse
+###Seriennummer Düse###
+Seriennummer-Düse
+###Kommentar Düse###
+Kommentar-Düse
+###Änderung Düse###
+Änderungsdatum
+###Eingabe Düse###
+Kalibrierdatum
+###Kenndaten###
+Kenndaten
+###Druckbeiwert###
+Druckbeiwert cpe
+###Düsenkennzahl###
+Düsenkennzahl Qv,20,tr,1000
+###Kanal Pabs###
+Kanal Absolutdruck
+###Kanal T###
+Kanal Temperatur
+###relative Feuchte###
+Kanal relative Feuchte
+###
+++++++++++Venturi-Editor++++++++++
+###< F1 >###
+
+###< F2 >###
+
+###< F3 >###
+
+###< F4 >###
+
+###< F5 >###
+Speichern
+###< F6 >###
+
+###< F7 >###
+
+###< F8 >###
+
+###< F9 >###
+
+###< F10 >###
+
+###< F11 >###
+
+###< F12 >###
+zurück
+###Name-Maske###
+Venturi-Editor
+###Name-Tab-1###
+Allgemeines
+###Name-Tab-2###
+Kenndaten
+###Name-Tab-3###
+Sensorzuordnung
+###Venturi Kürzel###
+Venturi-Kürzel
+###Typ Venturi###
+Venturi-Typ
+###Seriennummer Venturi###
+Venturi-Seriennummer
+###Kommentar Venturi###
+Venturi-Kommentar
+###Eingabe Venturi###
+Kalibrierdatum
+###Änderung Venturi###
+Änderungsdatum
+###Pol-Skal-Xs Blende###
+Eingangsskalierung Xs
+###Pol-Skal-Ys Blende###
+Ausgangsskalierung Ys
+###Koeff. Blende###
+Koeffizienten Blende
+###Koeff. Grad###
+Koeff. Grad
+###Gasart bei Kalibrierung###
+Gasart bei Kalibrierung
+###Kalibrierdruck###
+Kalibrierdruck
+###Kalibriertemperatur###
+Kalibriertemperatur
+###Kalibrierfeuchte###
+Kalibrierfeuchte
+###kl. Reynold###
+kl. Reynoldzahl
+###gr. Reynold###
+gr. Reynoldzahl
+###Durchmesser Öffnung###
+Durchmesser Öffnung
+###Rohrdurchmesser###
+Rohrdurchmesser
+###Tabelle Düse###
+Tabelle Düse
+###Kanal Pdiff###
+Kanal Differenzdruck
+###Kanal Pabs###
+Kanal Absolutdruck
+###Kanal T###
+Kanal Temperatur
+###Kanal rH###
+Kanal relative Feuchte
+###A0-A9 Venturi###
+Koeffizienten (in SI) A0, A1, A2, A3
+###
+++++++++++Passwort++++++++++
+###< F1 >###
+
+###< F2 >###
+Speichern
+###< F3 >###
+
+###< F4 >###
+
+###< F5 >###
+
+###< F6 >###
+
+###< F7 >###
+
+###< F8 >###
+
+###< F9 >###
+
+###< F10 >###
+
+###< F11 >###
+
+###< F12 >###
+zurück
+###Name-Maske###
+Passwort
+###Text BenutzerName###
+Benutzername
+###Text Passwort###
+Passwort (min. 6 Zeichen)
+###Text Benutzerlevel###
+Benutzerlevel
+###Einrichter###
+Einrichter
+###Administrator###
+Administrator
+###undefiniert###
+undefiniert
+###Bediener###
+Bediener
+###
+++++++++++Dummymaske++++++++++
+###< F1 >###
+F1xxx
+###< F2 >###
+F2xxx
+###< F3 >###
+F3xxx
+###< F4 >###
+F4xxx
+###< F5 >###
+F5xxx
+###< F6 >###
+zurück
+###Name-Maske###
+Dummy-Maske
+###
+++++++++++Login++++++++++

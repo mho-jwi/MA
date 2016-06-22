@@ -1,0 +1,149 @@
+
+=================================
+V1.10 Release Notes:
+=================================
+- Regler
+  - Regler T1_AHU1 und H1_AHU1 erweitert auf Differenzregelung zu T_TPA1 bzw. H_TPA1
+  - Regler H1_AHU1 und H2_AHU2 für Betriebsart „relative Feuchte“
+
+- <OPL7: Rel/Abs-Regelung für Feuchte sowie Diff/Abs-Regelung für Feuchte&Temperatur>
+  - Feuchteregelung Umgebung: bei Vorgabe der rel. Feuchte (H2_AHU2_rel) wird diese umgerechnet
+    in eine absolute Sollfeuchte H2_AHU2_abs; die Bedingungen dabei sind:
+    Temperatur = Sollwert T2_AHU2,
+    Druck = Umgebungsdruck + Sollwert PDTP
+    Änderungen von Umgebungsdruck, T- oder PDTP-Sollwert werden automatisch nachgeführt
+  - Feuchteregelung Gebäude: bei Vorgabe der rel. Feuchte (H1_AHU1_rel) wird diese umgerechnet
+    in eine absolute Sollfeuchte H1_AHU1_abs; die Bedingungen dabei sind:
+    Temperatur = Sollwert T1_AHU1 abs
+    Druck = Umgebungsdruck
+    Änderungen von Umgebungsdruck oder  T- Sollwert werden automatisch nachgeführt,
+    auch bei differentieller T-Regelung
+  - Feuchteregelung Gebäude: bei Vorgabe des differentiellen Sollwerts H1_AHU1_abs_diff wird
+    der interne Sollwert automatisch nachgeführt
+  - Bei Änderung eines der T / H Sollwertfelder werden die entsprechenden anderen Eingabefelder
+    blockiert und dort ggf. die internen Sollwertnachführung angezeigt.
+    Wiederfreigabe der Eingabefelder mit F2.
+
+- <OPL10: Nachfüllen der Befeuchter>
+  - 3 Parameter eingeführt, Offset  (c), Faktor des Stellwerts (f), Nachlaufzeit
+    Der neue Stellwert berechnet sich dann zu wneu = walt * f + c und wird ausgegeben bis die
+    Nachlaufzeit abgelaufen ist. Die Nachlaufzeit startet, wenn das Befüllsignal wieder ausgeht.
+  - Visualisierung der Befüllung in Messung und Diagnose
+
+- <OPL5: Algorithmus für V2_AHU2 >
+  - Regler PDTP erweitert auf Ansteuerung V2AHU2; gleiches prinzip wie bei NTPA und NTPB
+  - Defaultzustand des Reglers geändert auf „Offen“, damit V2AHU2 normalerweise offen ist.
+  - Regler PDTP wird bei FU aus entsprechend auf anhalten gesetzt (nicht mehr aus)
+
+- Diagnose:
+  - Anzeige der virtuellen Kanäle in der Diagnose (Register Analoge Werte)
+  - Erweiterung Grafik Regler i(T-Regler, Benenunng der Plots...)
+  - Anzeige der Führungsgröße für T- und H-Regler (= interner Sollwert)
+  - Anzeige der relativen Sollwert für die H-Regler mit visueller Umschaltung der Betriebsarten abs/rel
+
+- Messung:
+  - Felder für T4AHU2 und T3AHU1 und H2AHU2rel verbreitert
+  - Abschalten der Kältemaschine nur noch bei FU aus oder Warnung Heizung Umgebung
+
+20.07.2009 EP/CHL
+
+
+=================================
+V1.09 Release Notes:
+=================================
+- VIPA-AI funktionieren jetzt
+- VIPA AI umskaliert auf -40..+80°C
+- Startbutton für Kältemaschine
+- Kleinere Anpassungen an Messmaske
+- Beeinflussung NTPA mit NTPB aus 1V08 behoben
+- Das Schließen der Klappen V3 oder V4 TPA schalten T/H Regler nur noch aus, wenn beide Klappen zu sind.
+- Das Schließen der Klappen V5 oder V6 TPA schalten T/H Regler nur noch aus, wenn beide Klappen zu sind.
+
+19.06.2009 EP/CHL
+
+=================================
+V1.08 Release Notes:
+=================================
+- 3-Punkt-Regler für NAHU2 / Klappe V1AHU2 <OPL4>
+
+- Integration von 8 zusätzlichen VIPA-AI für T-Sensoren zur Berechnung der abs. Feuchten <OPL17>
+
+18.06.2009 EP/CHL
+
+=================================
+V1.07 Release Notes:
+=================================
+- Umrechnung absolute in relative Feuchte und umgekehrt nach IAPWS (Kundenwunsch) <OPL14>
+
+- Überschreiber Analogausgänge VIPA <OPL9>
+
+- Diverse kleinere Korrekturen <OPL6>
+	- Istwertanzeige EGAS entfernt (da kein Kanal)
+	- Istwertanziege Trockner entfernt (da kein Kanal)
+	- Zahlenformat WH Gebäude umgestellt
+	- Leistung Heizer AHU1 korrigiert auf 4 kW
+	- Beschriftung NAHU2 korrigiert
+	- Benennung der DI-Kanäle (insb. Störmeldungen) überarbeitet
+	- M1 AHU2 als „Leistung“ und als reine Anzeige
+	- AI-Simulator unsichtbar wenn Hardware vorhanden
+
+- Trocknerleistung vorwählbar 0-25-50-75-100% <OPL13>
+
+- Regler NTPA hält an wenn Klappen V2 und V3 geschlossen und startet automatisch wenn V2 oder V3 offen; V4,V5,V6 auf Kundenwunsch nicht berücksichtigt! <OPL1>
+
+- Regler NTPB hält an wenn Klappe V2 und startet automatisch wenn V2 offen  <OPL1>
+
+- Reglerverhalten NTPx bei Zustandsübergängen optimiert
+
+- Strömungserkennung: Bei Vorwarnung Heizer wird T-Regler abgeschaltet und Sollwerte –20 für Heizer und 60 für Kühler vorgegeben <OPL2,3>
+
+- Regler für Klimatisierung Gebäude starten nur durch neue Sollwertvorgabe und nur, wenn V3 oder V4 sowie V5 oder V6 geöffnet sind (nach Absprache Kunde) <OPL2,3>
+
+- FU wird bei Start des Druckreglers eingeschaltet; Druckregler schaltet mit FU Button ein oder aus <OPL12>
+
+- Alle Aktoren aus wenn Regler aus <OPL3>
+
+- Störungsanzeige (Sammelstörung) in Messmaske <OPL11>
+
+03.06.2009 EP/CHL
+
+=================================
+V1.06 Release Notes:
+=================================
+
+- Sollwertvorgabe über Messmaske; abgeschaltete Regler starten wenn zugehöriger Sollwert geändert wurde und die   Klappenstellung das zulässt (s.u.)
+- Regler TPx stoppen wenn Klappen geschlossen werden.
+- Statusanzeigen der Regler in der Messungsmaske
+- Sollwert für Druckregler immer aktiv; bei Umschaltung auf „Druckregelung“ werden die Regelklappen zu TPA und TPB voll   geöffnet (Reglerzustand „offen“)
+- Bleibender Offset bei Regler NTPB wenn NTPA aktiv behoben
+- QV NAHU2 Darstellung FloatingPoint mit 0 Nachkommastellen
+- Bilder bleiben auch wenn Bilddateien fehlen
+- Leistungsangaben Lufterhitzer funktionieren jetzt.
+- Reglerparameter (PID) jetzt in Scientific-Darstellung
+- Grafik Regler um diverse Tools erweitert
+
+28.04.2009 EP/CHL
+
+
+=================================
+V1.05 Release Notes:
+=================================
+- Berechnung:  Venturis und absolute Feuchten zentral im DAQ-Server als virtuelle Kanäle
+- Diagnose: Autozerofunktion optimiert, Nutzung des AutoOffset-Eintrags der Kalibrierdaten
+- Diagnose: VIPA AO Default für Ausgänge setzen ist jetzt aus (Regler haben ohnehin Vorrang)
+- Digital-I/O: Neue Kanäle „SW Betriebsbereit“, „Aktivierung EGAS TP-A“ und „Aktivierung EGAS TP-B“
+- Fehlerhandling: kein Log wiederholter Fehler mehr (Filegrösse!)
+- Initialisierung: 80% schneller
+- Messung: Anzeige absolute Feuchte der Umgebung
+- Messung: Initialisierung der Sollwertanzeigen aus den Reglerdaten
+- Regler: Volumenstromregler arbeitet jetzt auch in der Messung
+- Regler: Feuchteregler umgestellt auf abs. Feuchte (virtueller Istwertkanal)
+- Regler: Temperaturregler erweitert um Sollwert / Istwert / Stellwert Anzeige in Diagnose
+- Regler: Initialisierung der T / H Regler mit Umgebungszustand bei Start der SW
+- Regler: Bei Programmstart alle Regler aus
+- Regler: NaN-Zustand kann durch Regler Stop/Start behoben werden
+- Regler: Regelklappen TPA / TPB Rampenalgorithmus neu
+- TCP-Interface: Übertragung der virtuellen Werte, der Analogausgänge und des digitalen Abbildes
+- TCP-Remote: Anpassung und Fehlerbehebung der Demo
+
+18.04.2009 EP/CHL

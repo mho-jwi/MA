@@ -1,0 +1,19 @@
+V1.05 Release Notes:
+- Berechnung:  Venturis und absolute Feuchten zentral im DAQ-Server als virtuelle Kanäle
+- Diagnose: Autozerofunktion optimiert, Nutzung des AutoOffset-Eintrags der Kalibrierdaten
+- Diagnose: VIPA AO Default für Ausgänge setzen ist jetzt aus (Regler haben ohnehin Vorrang)
+- Digital-I/O: Neue Kanäle „SW Betriebsbereit“, „Aktivierung EGAS TP-A“ und „Aktivierung EGAS TP-B“
+- Fehlerhandling: kein Log wiederholter Fehler mehr (Filegrösse!)
+- Initialisierung: 80% schneller
+- Messung: Anzeige absolute Feuchte der Umgebung
+- Messung: Initialisierung der Sollwertanzeigen aus den Reglerdaten
+- Regler: Volumenstromregler arbeitet jetzt auch in der Messung
+- Regler: Feuchteregler umgestellt auf abs. Feuchte (virtueller Istwertkanal)
+- Regler: Temperaturregler erweitert um Sollwert / Istwert / Stellwert Anzeige in Diagnose
+- Regler: Initialisierung der T / H Regler mit Umgebungszustand bei Start der SW
+- Regler: Bei Programmstart alle Regler aus
+- Regler: NaN-Zustand kann durch Regler Stop/Start behoben werden
+- Regler: Regelklappen TPA / TPB Rampenalgorithmus neu
+- TCP-Interface: Übertragung der virtuellen Werte, der Analogausgänge und des digitalen Abbildes
+- TCP-Remote: Anpassung und Fehlerbehebung der Demo
+18.04.2009 EP/CHÖ

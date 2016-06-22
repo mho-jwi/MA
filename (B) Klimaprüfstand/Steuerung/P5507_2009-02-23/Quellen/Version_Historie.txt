@@ -1,0 +1,52 @@
+*****************************************************************************************************************************
+Version 1.01 (13.05.2008)
+
+- Fehler in Start und Stop über die RS232-Schnittstelle behoben.
+
+- Fehler in der Mittelwertabfrage über die RS232-Schnittstelle behoben. 
+
+*****************************************************************************************************************************
+Version 1.02 (16.05.2008)
+
+- Digitale Ein-/Ausgänge nach kundenwunsch programmiert
+	DI0= START Messung
+	DI1= STOP-Messung
+	DI2= Fehler quittieren
+
+	DO0= Software bereit
+	DO1= Störung
+	DO2= Messung ENDE
+
+*****************************************************************************************************************************
+Version 1.03 (26.05.2008)
+
+- Konfiguration der Hardware kann in der LMF.ini vorgenommen werden
+	ABC_Messkarte=PCI-6221		*\ Bezeichnung der Messkarte
+	DBL_AI=8			*\ Anzahl der analogen Eingänge
+	DBL_AO=1			*\ Anzahl der analogen Ausgänge
+	DBL_DI=0			*\ Anzahl der digitalen Eingänge
+	DBL_DO=0			*\ Anzahl der digitalen Ausgänge
+	ABC_Messelement=LFE		*\ Auswahl des Messelemntes (LMF/Düse/Venturi)
+	DBL_Anzahl Messelement=3	*\ Anzahl der Messelemnte die ausgewählt werden können
+	Ring_MesselementMK0=0		*\ Default Messelement für Messkreis 1
+	Ring_MesselementMK1=0		*\ ----"---- Messkreis 2 (noch nicht implementiert)
+	T/F_RS232=TRUE			*\ RS232 (TRUE=aktiviert
+						  FALSE=deaktiviert)
+- Sprachumschaltung kann ebenfalls in der LMF.ini vorgenommen werden
+	T/F_Sprachumschaltung=FALSE	*\ TRUE=Aktiviert / FALSE=Deaktiviert
+	ABC_LanguageSelected=GER	*\ Default SParche beim Start der Software
+
+ACHTUNG: Sprachumschaltung noch nicht alles programmiert!!!!!!!!!!!!!!!!!
+
+
+- Kontinuierliche Messwerterfassung zeichnet nur 65536 Zeilen auf (Max. Anzahl die in Excel eingelesen werden kann)
+
+- Einheitenumschaltung bei den analogen Eingänge und den berechneten Werte (Speicerung erfolgt mit den eingestellten Einheiten)
+
+- Autozero-Funktion in der Maske "Messung" aktiviert
+
+- Button um die analogen Ausgänge abzuschalten
+
+- Messung-Ansicht: Auswahl drei Kanäle die gößer angezeigt werden 
+
+*****************************************************************************************************************************

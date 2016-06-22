@@ -1,0 +1,15 @@
+ALL THE PID CONTROLLERS USE SEPERATE GLOBLAS.
+
+***********************************
+
+NTPA, NTPB regler working.
+
+Qv AHU2 uses V1AHU2 to control flow. its a 4 punkt regler.
+The PID parameters are not deleted from tab in Diagnose. 
+
+
+***********************************
+
+bildshirm auflösung (resolution) corrected on 10_02_09. so some of the blockdiagrams 
+
+created in this time use more space and are running out of monitor (are too big).
