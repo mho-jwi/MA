@@ -51,8 +51,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Layout der Seiten
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fancyhdr} %Einstellung der Kopfzeile, Chaptermark auskommentieren wenn ein Stil one Kapitel gewählt wird (z.B. scrartcl)
-\pagestyle{fancy} % Notwendig um die nächsten beiden Neudefinitionen vorzunehmen
+%\usepackage{fancyhdr} %Einstellung der Kopfzeile, Chaptermark auskommentieren wenn ein Stil one Kapitel gewählt wird (z.B. scrartcl)
+%\pagestyle{fancy} % Notwendig um die nächsten beiden Neudefinitionen vorzunehmen
+%\renewcommand{\sectionmark}[1]{\normalsize\markright{\thesection{} #1}{}}
+%\renewcommand{\chaptermark}[1]{\normalsize\markboth{#1}{}}
+%\interfootnotelinepenalty=10000 % Fußnoten nicht über zwei Seiten verteilen
+\usepackage[autooneside=false,headsepline,markcase=noupper]{scrlayer-scrpage}
+\automark[subsection]{section}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ofoot[\pagemark]{\pagemark}
+\ihead{\ifstr{\rightbotmark}{\leftmark}{}{\rightbotmark}}
+\ohead{\leftmark}
+
 \renewcommand{\sectionmark}[1]{\normalsize\markright{\thesection{} #1}{}}
 \renewcommand{\chaptermark}[1]{\normalsize\markboth{#1}{}}
 \interfootnotelinepenalty=10000 % Fußnoten nicht über zwei Seiten verteilen
@@ -142,7 +154,7 @@
 % Setup der Sonderseiten (Inhaltsverzeichnis, Abbildungsverzeichnis, Nomenklatur etc.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\pagestyle{fancy}\lhead{}\chead{}\rhead{\rightmark}
+%\pagestyle{scrheadings}\lhead{}\chead{}\rhead{\rightmark}
 \pagenumbering{roman} % römische Seitenzahlen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -177,9 +189,9 @@
 \newpage
 \refstepcounter{Hilfszaehler}
 \addcontentsline{toc}{chapter}{Nomenklatur}
-\rhead{Nomenklatur}
+%\rhead{Nomenklatur}
 \include{Chapters/Abkuerzungen}
-\rhead{\rightmark} %Zurücksetzen der Kopfzeile
+%\rhead{\rightmark} %Zurücksetzen der Kopfzeile
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,7 +219,7 @@
 \refstepcounter{Hilfszaehler}
 \addcontentsline{toc}{chapter}{Vorwort}
 \input{Chapters/Vorwort.tex}
-\rhead{Vorwort}
+%\rhead{Vorwort}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -216,9 +228,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \pagenumbering{arabic}
-\pagestyle{fancy}\lhead{\leftmark}\chead{}\rhead{\rightmark}
-\rhead{\rightmark}
-\lhead{\leftmark}
+%\pagestyle{fancy}\lhead{\leftmark}\chead{}\rhead{\rightmark}
+%\rhead{\rightmark}
+%\lhead{\leftmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -254,7 +266,7 @@
 \vfill{}
 \appendix
 \newpage
-\pagestyle{fancy}
+%\pagestyle{fancy}
 \input{Chapters/Anhang.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

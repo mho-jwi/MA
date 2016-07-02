@@ -11,6 +11,7 @@ txt = txt(:,2:end);
     num(:,~any(num))=[];            %alle leeren Zahlen-Spalten löschen
  end
 
+ num = num/1000;
 varMat = txt(1,:);                  %Zeile mit Variablennamen auswählen
  e = cellfun('isempty',varMat);     %Leere Zellen finden
                  varMat(e) = [];    %Leere Zellen löschen
@@ -18,14 +19,10 @@ varMat = txt(1,:);                  %Zeile mit Variablennamen auswählen
 ind = find(strcmp(varMat, 'Datum'));%Zelle mit dem Inhalt Datum finden
                  varMat(ind) = [];  %Zelle mit Datum löschen
                  
-varNames = char(varMat(1,:)); %Bestimmen der Spaltenüberschriften=Variablennamen 
-%varNames = varNames(:,1:end-5);
-%[remain, token] = strtok(varNames, );
-%loesch = strmatch ( [°C],varNames);
-%for varcount = 1 (
-varNames(1,:) = regexprep (varNames(1,:), '[°C]','');
+%varNames = char(varMat(1,:)); %Bestimmen der Spaltenüberschriften=Variablennamen 
 
 
+varNames = strvcat('T_AUL','T_ABL','T_ZUL_Mitte','T_ZUL_L','T_ZUL_O','T_ZUL_U','T_ZUL_R','T_FOL_Mitte','T_FOL_L','T_FOL_O','T_FOL_U','T_FOL_R','T_ZUL_PHI','T_FOL_PHI','Spannung','PHI_AUL','PHI_ZUL','PHI_FOL','PHI_ABL');
 %Zahlenreihen den Variablennamen zuordnen und in Workspace schreiben
    for col=1:size(varNames,1),
           assignin ('base',deblank(varNames(col,:)),num(1:end,col));
