@@ -1,5 +1,5 @@
 \chapter{Teil2}
-\label{cha:Teil2}
+\label{cha:Physikalische Grundlagen}
 
 
 
@@ -12,9 +12,7 @@
 
 \subsection{Stofftransport}
 
-\subsubsection{allgemein}
-
-Die im untersuchten Enthalpieübertrager verwendete Membran besteht aus einer dichten Grundschichten und einer porösen Stützschicht. Der Stofftransport lässt sich analog zur Elektrotechnik als eine Kette von in Reihe geschalteten Prozessen darstellen. Eine Übersicht über die in Reihe geschalteten Prozesse gibt die folgende Abbildung\ref{fig:Tansportprozesse durch eine asymetrische Membran}.
+Die im untersuchten Enthalpieübertrager verwendete Membran besteht aus einer dichten Grundschicht und einer porösen Stützschicht. Der Stofftransport lässt sich analog zur Elektrotechnik als eine Kette von in Reihe geschalteten Prozessen darstellen. Eine Übersicht über die in Reihe geschalteten Prozesse gibt die folgende Abbildung\ref{fig:Tansportprozesse durch eine asymmetrische Membran}.
 % Bild zu Membranprozessen einfügen
 
 %\begin{figure} [h]
@@ -24,20 +22,20 @@ Die im untersuchten Enthalpieübertrager verwendete Membran besteht aus einer di
 %	\label{fig:Tansportprozesse durch eine asymetrische Membran}
 %\end{figure}
 
-Im ersten Schritt diffundiert der Wasserdampf durch den Luftstrom der Abluftseite. Dies geschieht auf Grund eines Konzentrationsgradienten. Der Konzentrationsgradient entsteht durch das Ableiten der Wassermassenstroms durch die Membran. 
+Im ersten Schritt diffundiert der Wasserdampf durch den Luftstrom der Abluftseite. Dies geschieht auf Grund eines Konzentrationsgradienten. Der Konzentrationsgradient entsteht durch das Ableiten des Wassermassenstroms durch die Membran. 
 
 In einem zweiten Schritt absorbiert die Membranoberfläche den Wasserdampf. 
 
 Im dritten Schritt folgt die Diffusion durch die dichte Grundschicht der Membran. 
 
-Im vierten Schritt desorbiert das Wasser an der zuluftseitigen Oberfläche der Membran in die Zuluft. 
+Im vierten Schritt desorbiert das Wasser an der zuluftseitigen Oberfläche der Membran in die Frischluft. 
 
-In einem fünften Schritt wird der Wasserdampf durch die Poröse Membran transportiert und verteilt sich in einem sechsten Schritt im Zuluftstrom. Diese Diffusionsprozesse durch die Poren und den Luftstrom werden durch Konzentrationsgradienten verursacht.
+In einem fünften Schritt wird der Wasserdampf durch die poröse Membran transportiert und verteilt sich in einem sechsten Schritt im Zuluftstrom. Diese Diffusionsprozesse durch die Poren und den Luftstrom werden durch Konzentrationsgradienten verursacht.
 
 
 Wie oben beschrieben führt eine Betrachtung der 6 Prozessschritte als Reihenschaltung zu einer guten Beschreibung des Stofftransportes. Dies geschieht analog zur Elektrotechnik. Entsprechend ergibt sich der Gesamtwiderstand $W_{ges}$ der Membran aus einer Addition der Einzelwiderstände von dichter Membran $W_{d}$ und poröser Membran $W_{p}$:
 
- \begin{equation}
+\begin{equation}
  W_{ges} = W_{d} + W_{p}
 \end{equation} 
  
@@ -47,14 +45,12 @@ Im Fall von parallel geschalteten Widerständen, zum Beispiel beim Auftreten von
 \frac{1}{W_{ges}} = \frac{1}{W_{d}} + \frac{1}{W_{p}}
 \end{equation}
 
-gebildet werden. Beispiele hierfür sind das Auftreten von Poren in einer dichten Membran oder das parallel Ablaufen von konvektiven und diffusiven Stofftransportprozessen.
+gebildet werden. Beispiele hierfür sind das Auftreten von Poren in einer dichten Membran oder allgemein das parallel Ablaufen von konvektiven und diffusiven Stofftransportprozessen.
 
 
 \subsubsection{Sorption an Membranoberfläche}
 %Die Triebkraft des Sorptionsprozesses ist eine Differenz im chemischen Potential. Zur Beschreibung der Sorptionsprozesse werden meistens empirische und halbempirische Modelle genutzt. Das chemische Potential hängt im Fall der Sorption wesentlich von zwei Faktoren ab. Zum eine von der maximalen Wasserbeladung der Me
-Die Triebkraft des Sorptionsprozesses ist eine Differenz im chemischen Potential.  Meist werden hydrophile Membranenmaterialien für die dichte Membran eingesetzt. Daher entsteht an der Feed-Seite eine höherer Potentialdifferenz. Neben der Affinität des Membranmaterials ist die maximale Aufnahmekapazität der Membran ausschlaggebend für die Gleichgewichtskonzentration des Stoffes $i$ in der Membranoberfläche. Diese Lösungs-Gleichgewichtsmodell ist insbesondere von Lösungen anderer Aggregatzustände bekannt. Die Beschreibung des Sorptionsprozesses mit physikalischen Modellen ist schwierig. Daher hat sich für die Beschreibung des Sorptionsprozesses ein halbempirisches Modell durchgesetzt, das sich in den meisten Veröffentlichungen wiederfindet
-%Literatur
-. Demnach stellt sich in der Membranoberfläche eine Feuchtebeladung $\Theta$ von 
+Die Triebkraft des Sorptionsprozesses ist eine Differenz im chemischen Potential. Meist werden hydrophile Membranenmaterialien für die dichte Membran eingesetzt. Daher entsteht an der Feed-Seite eine höherer Potentialdifferenz. Neben der Affinität des Membranmaterials ist die maximale Aufnahmekapazität der Membran ausschlaggebend für die Gleichgewichtskonzentration des Wassers in der Membranoberfläche. Dieses Lösungs-Gleichgewichtsmodell ist insbesondere von Lösungen anderer Aggregatzustände bekannt, z.B. von Salzlösungen oder Wasser-Luft-Lösungen. Die Beschreibung des Sorptionsprozesses mit physikalischen Modellen ist schwierig. Daher hat sich für die Beschreibung des Sorptionsprozesses ein halbempirisches Modell durchgesetzt, das sich in den meisten Veröffentlichungen wiederfindet, z.B. in \cite{J.L.Niu.2001} oder \cite{Dugaria.2015}. Demnach stellt sich in der Membranoberfläche eine Feuchtebeladung $\Theta$ von 
 
 \begin{equation}
 \Theta = \dfrac{\omega_{max}}{1-c+\frac{c}{\Phi}}
@@ -76,33 +72,33 @@ Die Diffusion durch die dichte Membran ist im vorliegenden Fall der einflussreic
 
 %in Abhängigkeit von der Gaskonstanten R, der Temperatur T und der Konzentration des Permeates i C_{i} und dessen örtlichen Gradienten dC_{i}/dx)
 
-Unter der Annahme einer homogenen dichten Membran und konstanter thermodynamischer Randbedingungen (Druck und Temperatur) in der Membran, ergibt sich eine lineare Konzentrationsverteilung in der Membran. In der Literatur wird der Zusammenhang für den örtlichen Gradienten des chemischen Potentials und der übertragenen Stoffmenge ebenfalls als linear angenommen. 
+Unter der Annahme einer homogenen dichten Membran und konstanter thermodynamischer Randbedingungen (Druck und Temperatur) in der Membran, ergibt sich eine lineare Konzentrationsverteilung über die Z-Achse der Membran. In der Literatur wird der Zusammenhang für den örtlichen Gradienten des chemischen Potentials und der übertragenen Stoffmenge ebenfalls als linear angenommen.(s.\cite{Koester.2015} 
 %Literatur einfügen
 %Da von konstanten thermodynamischen Eigenschaften in der Membran ausgegangen wird, ist es für die Modellierung egal ob der Massenstrom oder der Stoffmengenstrom betrachtet wird. 
-Für den Stoffmengentransport ist aus physikalischen Membranmodellen die Gleichung 
+Entsprechend ist für den Stoffmengentransport aus physikalischen Membranmodellen die Gleichung 
 
 \begin{equation}
- \dot{n}^{\prime\prime} = - c_{iM} * b_{iM} * \frac{d\mu_{iM}}{dz}
+ \dot{n}^{\prime\prime} = - c_{wM} * b_{wM} * \frac{d\mu_{wM}}{dz}
 \end{equation}
 
-bekann, wobei $\dot{n}^{\prime\prime}$ der Stoffmengenstrom über die Membran ist und $b_{iM}$ die Beweglichkeit der diffundierenden Moleküle angibt. 
+bekannt, wobei $\dot{n}^{\prime\prime}$ der Stoffmengenstrom des Wassers über die Membran ist und $b_{wM}$ die Beweglichkeit der diffundierenden Moleküle angibt. \cite{T.Melin.2007}
 % hier: Nernst-Einstein, evtl noch auf Fick eingehen
-Für den Diffusionsmassenstrom $J_{i}$ ergibt sich ein proportionaler Zusammenhang zum Gradienten des chemischen Potentials $\mu$
+Für den Diffusionsmassenstrom $J_{w}$ ergibt sich ein proportionaler Zusammenhang zum Gradienten des chemischen Potentials $\mu$
 
 \begin{equation}
-J_{i} = -L_{i}*\frac{d\mu_{i}}{dx}
+J_{w} = -L_{w}*\frac{d\mu_{w}}{dx}
 \end{equation}
 
-wobei $L_{i}$ der Proportionalitätsfaktor ist.
+wobei $L_{w}$ der Proportionalitätsfaktor ist.
 
-Das chemische Potential ist definiert als Summe aus einem druckabhängigen Potentialterm, einem Standardpotentialterm und einem konzentrationsabhängigen Potentialterm zu
+Das chemische Potential eines Stoffes $i$ ist definiert als Summe aus einem druckabhängigen Potentialterm, einem Standardpotentialterm und einem konzentrationsabhängigen Potentialterm zu
 
 \begin{equation}
-\mu_{i}(T,p,c_{i}) = \mu_{i}^\circ (T,p^\circ) + R\footnote{ideale Gaskonstante = 8.314 J/mol/K}T*ln(a_{i}(T,p^\circ,c_{i})) + v_{i}*(p-p^\circ)
+\mu_{i}(T,p,c_{i}) = \mu_{i}^\circ (T,p^\circ) + R*T*ln(a_{i}(T,p^\circ,c_{i})) + v_{i}*(p-p^\circ)
 \end{equation}
 
 
-wobei $P^\circ$ der Standarddruck ist, $a_{i}$ die Aktivität des Stoffes $i$ und $v_{i}$ das Molvolumen des Stoffes $i$.
+wobei $P^\circ$ der Standarddruck ist, $R$ die ideale Gaskonstante \footnote{Gaskonstante = 8.314 J/mol/K}, $a_{i}$ die Aktivität des Stoffes $i$ und $v_{i}$ das Molvolumen des Stoffes $i$.
 
 
 Unter der Voraussetzung einer idealen Gasmischung entfällt der Druckterm

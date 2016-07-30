@@ -1,4 +1,4 @@
-function [xW] = humidAir_calcXfromRH(RH, T, P)
+%function [xW] = humidAir_calcXfromRH(RH, T, P)
 % x in kg/kg, relative humidity in %, temperature °C, absolute pressure Pa
 
 % basis of calculations is Arden Buck equation
@@ -18,6 +18,10 @@ function [xW] = humidAir_calcXfromRH(RH, T, P)
     ci = 279.82;
     di = 333.7;
     
+    
+    RH = 80;
+    T = -8;
+    P = 99500;
     P = P/100;  % calculations require hekto pascal (equal mbar)
 
 %% f1 will calculate the vapor pressure in mbar from dew/frost point temperature in °C

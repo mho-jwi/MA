@@ -10,6 +10,7 @@
 				,captions=tableheading
 				,paper=a4
 				,abstracton
+				,enabledeprecatedfontcommands
                 ]{scrreprt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,6 +57,8 @@
 %\renewcommand{\sectionmark}[1]{\normalsize\markright{\thesection{} #1}{}}
 %\renewcommand{\chaptermark}[1]{\normalsize\markboth{#1}{}}
 %\interfootnotelinepenalty=10000 % Fußnoten nicht über zwei Seiten verteilen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage[autooneside=false,headsepline,markcase=noupper]{scrlayer-scrpage}
 \automark[subsection]{section}
 
@@ -64,11 +67,6 @@
 \ofoot[\pagemark]{\pagemark}
 \ihead{\ifstr{\rightbotmark}{\leftmark}{}{\rightbotmark}}
 \ohead{\leftmark}
-
-\renewcommand{\sectionmark}[1]{\normalsize\markright{\thesection{} #1}{}}
-\renewcommand{\chaptermark}[1]{\normalsize\markboth{#1}{}}
-\interfootnotelinepenalty=10000 % Fußnoten nicht über zwei Seiten verteilen
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Tabellen
@@ -154,7 +152,7 @@
 % Setup der Sonderseiten (Inhaltsverzeichnis, Abbildungsverzeichnis, Nomenklatur etc.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-%\pagestyle{scrheadings}\lhead{}\chead{}\rhead{\rightmark}
+%\pagestyle{fancy}\lhead{}\chead{}\rhead{\rightmark}
 \pagenumbering{roman} % römische Seitenzahlen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -238,7 +236,6 @@
 % Hier werden die einzelnen Kapitel eingebunden.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{Chapters/Teil1.tex}
-\input{Chapters/Teil2.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -252,7 +249,7 @@
 \refstepcounter{Hilfszaehler}
 \addcontentsline{toc}{chapter}{\bibname}
 \protect\bibliographystyle{natdin}
-\bibliography{Literatur1}
+\bibliography{Literatur}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
