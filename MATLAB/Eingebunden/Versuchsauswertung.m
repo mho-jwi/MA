@@ -6,7 +6,7 @@
 %Dateinamen angeben:
 Dateiname = '20160701_gemittelt_zusammengefasst.xlsx';
 %Name der Zieldatei
-NeuerDateiname = [Dateiname(1,1:end-5) '_Auswertung_Zhang1' '.xlsx'];
+NeuerDateiname = [Dateiname(1,1:end-5) '_Auswertung_0508162' '.xlsx'];
 
 %absoluter Umgebungsdruck in Pa:
 P_amb = 99500;
@@ -78,6 +78,10 @@ varNames = char('T_AUL','T_ABL','T_ZUL_Mitte','T_ZUL_L','T_ZUL_O','T_ZUL_U','T_Z
 
   
    %% Berechnungen
+   
+%Berechnung der gemittelten Temperaturen für Fortluft und Zuluft
+[T_ZUL] = Berechnung_gemittelte_Temp_ZUL (T_ZUL_L, T_ZUL_R, T_ZUL_Mitte, T_ZUL_O, T_ZUL_U);
+[T_FOL] = Berechnung_gemittelte_Temp_FOL (T_FOL_L, T_FOL_R, T_FOL_U, T_FOL_O, T_FOL_Mitte);
   
 %Funktionsaufruf zur Berechnung der relativen Feuchte
 [PHI_ABL, PHI_AUL, PHI_FOL, PHI_ZUL] = Berechnung_relative_Feuchte_aus_Spannung(PHI_ABL, PHI_AUL, PHI_FOL, PHI_ZUL, T_ABL, T_AUL, T_FOL_PHI, T_ZUL_PHI, Spannung);
@@ -91,14 +95,17 @@ Feuchtewerte = [PHI_AUL, PHI_ABL, PHI_ZUL, PHI_FOL,];
 %Funktionsaufruf zur Berechnung der realtiven Feuchte in der Prüfbox
 %Funktionsaufruf zur Berechnung der Feuchte in der Prüfbox
 Absfeuchte = [x_ZUL, x_FOL];
-Mitteltemperaturen = [T_ZUL_Mitte, T_FOL_Mitte];
+Mitteltemperaturen = [T_ZUL, T_FOL];
 
 [PHI_ZUL, PHI_FOL] = Feuchterueckrechnung(Mitteltemperaturen, Absfeuchte, P_amb);
 
 %Funktionsaufruf zur Berechnung der Übertragungskoeffizienten
 
 %[NTU_sen, NTU_lat, k_sen, k_lat, eff_lat, y, eff_sen, x] = Berechnung_Uebertragungswerte(PHI_ABL, PHI_AUL, PHI_FOL, PHI_ZUL, T_ABL, T_AUL, T_FOL_PHI, T_ZUL_PHI, x_AUL, P_amb, R);
-[k_sen_Zhang, k_lat_Zhang, NTU_sen_Zhang, NTU_lat_Zhang, eff_lat,eff_sen] = Berechnung_Uebertragungswerte_log(T_ABL, T_AUL, T_FOL_Mitte, T_ZUL_Mitte, x_AUL, x_ZUL, x_ABL, x_FOL, P_amb);
+[k_sen_Zhang, k_lat_Zhang, NTU_sen_Zhang, NTU_lat_Zhang, eff_lat,eff_sen] = Berechnung_Uebertragungswerte_log(T_ABL, T_AUL, T_FOL, T_ZUL, x_AUL, x_ZUL, x_ABL, x_FOL, P_amb);
+
+%Ermitteln der thermodynamischen Mitteltemperaturen
+[T_m_f, T_m_e, x_m_f, x_m_e] = Thermodynamische_Mittelwerte (T_ZUL, T_AUL, T_FOL, T_ABL, x_ZUL, x_AUL, x_ABL, x_FOL);
 
 % Zwischenwerte aus Workspace löschen
 clear col Datum num txt varMat e ind c ans ind varNames Spannung Feuchtewerte Feuchtesensortemperaturen;
@@ -108,6 +115,6 @@ clear col Datum num txt varMat e ind c ans ind varNames Spannung Feuchtewerte Fe
 %% schreiben der Exceldatei
 
 %Tabel erzeugen
-ExTab = table(Zeit,T_AUL,T_ABL,T_ZUL_PHI,T_FOL_PHI,PHI_AUL,PHI_ABL,PHI_ZUL,PHI_FOL,x_AUL,x_ABL,x_ZUL,x_FOL,T_ZUL_Mitte,T_ZUL_O,T_ZUL_U,T_ZUL_L,T_ZUL_R,T_FOL_Mitte,T_FOL_O,T_FOL_U,T_FOL_L,T_FOL_R,k_sen_Zhang, k_lat_Zhang, NTU_sen_Zhang, NTU_lat_Zhang, eff_lat,eff_sen);
+ExTab = table(Zeit,T_AUL,T_ABL,T_ZUL,T_FOL,T_ZUL_PHI,T_FOL_PHI,PHI_AUL,PHI_ABL,PHI_ZUL,PHI_FOL,x_AUL,x_ABL,x_ZUL,x_FOL,T_ZUL_Mitte,T_ZUL_O,T_ZUL_U,T_ZUL_L,T_ZUL_R,T_FOL_Mitte,T_FOL_O,T_FOL_U,T_FOL_L,T_FOL_R,k_sen_Zhang, k_lat_Zhang, NTU_sen_Zhang, NTU_lat_Zhang, eff_lat,eff_sen,T_m_f,T_m_e,x_m_f,x_m_e);
 %in Excelfile schreiben
 writetable(ExTab,NeuerDateiname,'WriteRowNames',true);

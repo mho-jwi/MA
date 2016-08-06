@@ -1,4 +1,4 @@
-function [k_sen_Zhang, k_lat_Zhang, NTU_sen_Zhang, NTU_lat_Zhang, eff_lat, eff_sen] = Berechnung_Uebertragungswerte(T_ABL, T_AUL, T_FOL_Mitte, T_ZUL_Mitte, x_AUL, x_ZUL, x_ABL, x_FOL, P_amb);
+function [k_sen_Zhang, k_lat_Zhang, NTU_sen_Zhang, NTU_lat_Zhang, eff_lat, eff_sen] = Berechnung_Uebertragungswerte(T_ABL, T_AUL, T_FOL, T_ZUL, x_AUL, x_ZUL, x_ABL, x_FOL, P_amb);
 
 %function [NTU_lat,NTU_sen] = Waerme_Stofftransportmodell_Enthalpietauscher()
 % Modell Feuchtetransport Enthalpietauscher
@@ -46,7 +46,7 @@ W_e = m_e*cp_e;
 
 % sensibel
 
-eff_sen = (m_f * cp_f .* (T_AUL-T_ZUL_Mitte))./ (min(W_f,W_e).*(T_AUL-T_ABL));
+eff_sen = (m_f * cp_f .* (T_AUL-T_ZUL))./ (min(W_f,W_e).*(T_AUL-T_ABL));
 
 % latent
 eff_lat = (m_f .*  (x_AUL-x_ZUL))./ (min(m_f,m_e).*(x_AUL-x_ABL));

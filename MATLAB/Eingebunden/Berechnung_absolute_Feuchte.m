@@ -28,16 +28,27 @@ for scount = 1:size(Feuchtesensortemperaturen,2),
     T = Feuchtesensortemperaturen(:,scount);
     RH = Feuchtewerte (:,scount);
     einvec = ones(size(T,1),1);
+    
+    if scount == 1
+        P_ambr = P_amb;
+    elseif scount == 2
+        P_ambr = P_amb - 0.26;
+    elseif scount == 3
+        P_ambr = P_amb - 0.16;
+    elseif scount == 4
+        P_ambr = P_amb - 0.42;
+    end
+        
 if T > 0
-    EFw = 1 + 10^-4 *(7.2 + P_amb * (0.0320 + 5.9*10^-6 * T.^2));
+    EFw = 1 + 10^-4 *(7.2 + P_ambr * (0.0320 + 5.9*10^-6 * T.^2));
     f1wT = EFw * aw .* exp((bw*einvec - T/dw) .* T./(T + cw*einvec));    %saturation pressure from temperature
     f1wDP = (RH/100) .* f1wT;  % vaporPressure
-    xW = ((18.015/28.963) * f1wDP ./(P_amb*einvec - f1wDP));
+    xW = ((18.015/28.963) * f1wDP ./(P_ambr*einvec - f1wDP));
 else
-    EFi = 1 + 10^-4 *(2.2 + P_amb * (0.0383 + 6.4*10^-6 * T.^2));
+    EFi = 1 + 10^-4 *(2.2 + P_ambr * (0.0383 + 6.4*10^-6 * T.^2));
     f1iT = EFi * ai .* exp((bi - T/di) .* T./(T + ci));    %saturation pressure from temperature
     f1iDP = (RH/100) .* f1iT;  % vaporPressure
-    xW = ((18.015/28.963) * f1iDP ./(P_amb - f1iDP));
+    xW = ((18.015/28.963) * f1iDP ./(P_ambr - f1iDP));
 end
 
 
