@@ -1,0 +1,282 @@
+% Koma-Script Report, verkleinerte Überschriftenstile, Linie unter der Kopfzeile
+\documentclass[ 11pt
+				,ngerman
+				,headsepline
+				,headings=small
+				,numbers=noenddot %kein Punkt hinter letzter Gliederungsziffer Abschnitt 2.1 statt 2.1.
+				,draft=false
+				,BCOR=0mm %Wert für Bindekorrektur kann hier eingestellt werden
+				,DIV=12
+				,captions=tableheading
+				,paper=a4
+				,abstracton
+                ]{scrreprt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Basispakete
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel} %Anpassungen an nicht-englische Sprachen
+\usepackage{ifpdf} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Schriftarten, Schriftschnitte etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fourier} %PDF-kompatible Schriftfamilie "Utopia", Freierhältliches Look-alike: Heuristica
+\makeatletter % Warnungen zu Schriftartersetzungen unterdrücken
+  \let\@font@info\@gobble
+  \let\@font@warning\@gobble
+\makeatother
+
+\usepackage[official]{eurosym} % Eurosymbol
+\DeclareUnicodeCharacter{20AC}{\euro} % Standard-Euro-Symbol wird durch qualitativ hochwertiges Eurosymbol ersetzt
+
+\renewcommand{\caplabelfont}{\bfseries} % Fettdruck für Abb. und Tab.
+
+\usepackage{color}
+\definecolor{ercred}{RGB}{229,48,39}
+
+\usepackage{setspace} % Einstellen von Zeilenabständen
+\onehalfspacing % Anderthalbzeiliger Satz
+
+\setlength\parskip{\medskipamount} % Abstand zwischen zwei Absätzen
+\setlength\parindent{0pt} % Keine Einrückung in der ersten Zeile eines Absatz
+
+\AtBeginDocument{
+  \renewcommand{\labelitemi}{\(\triangleright\)} %definiert die Art der Aufzählungszeichen
+  \renewcommand{\labelitemii}{\(\bullet\)}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Layout der Seiten
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{fancyhdr} %Einstellung der Kopfzeile, Chaptermark auskommentieren wenn ein Stil one Kapitel gewählt wird (z.B. scrartcl)
+%\pagestyle{fancy} % Notwendig um die nächsten beiden Neudefinitionen vorzunehmen
+%\renewcommand{\sectionmark}[1]{\normalsize\markright{\thesection{} #1}{}}
+%\renewcommand{\chaptermark}[1]{\normalsize\markboth{#1}{}}
+%\interfootnotelinepenalty=10000 % Fußnoten nicht über zwei Seiten verteilen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[autooneside=false,headsepline,markcase=noupper]{scrlayer-scrpage}
+\automark[subsection]{section}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ofoot[\pagemark]{\pagemark}
+\ihead{\ifstr{\rightbotmark}{\leftmark}{}{\rightbotmark}}
+\ohead{\leftmark}
+\usepackage{lscape,lipsum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tabellen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{booktabs} % erzeugt besser aussehende Tabellen, horizontale Linien mit \toprule, \midrule, \bottomrule
+\usepackage[point]{rccol} %Richtet Zahlen in Tabellen nach Dezimalkomma aus, im Output wird ein Dezimalpunkt verwendet
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbildungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{subfigure}
+\usepackage{float}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mathematik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage[cdot,thickqspace,squaren,textstyle]{SIunits} % SI-Einheiten sind als Befehle verfügbar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Referenzen und Zitate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{varioref}
+\usepackage[square]{natbib}
+\usepackage{bibunits}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PDF-Einstellungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifpdf
+	%we are running PDFLaTeX
+	\usepackage[pdftex]{graphicx} 
+	\pdfimageresolution=100
+	\pdfminorversion=7
+	\pdfcompresslevel=9
+	\usepackage[pdftex,
+		urlcolor=blue,
+		linktocpage,
+		colorlinks=true,
+		linkcolor=black,
+		citecolor=black,
+		pdfview=FitH,
+		pdfstartview=FitH,
+		plainpages=false]{hyperref}
+	\hypersetup{
+		pdfauthor={Deine Name},
+        pdftitle={Titel des Berichts},
+        pdfsubject={},
+        pdfkeywords={Mehrere aussagekräftige Schlagwörter},
+        pdfproducer={LaTeX with hyperref},
+        pdfcreator={pdflatex}}
+    \usepackage[figure,figure*]{hypcap}
+\else
+	%DVI or PS output
+	\usepackage{graphicx} 
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\pagestyle{empty}
+\newcounter{Hilfszaehler}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HIER GEHT ES WIRKLICH LOS 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deckblatt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapters/Deckblatt.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Setup der Sonderseiten (Inhaltsverzeichnis, Abbildungsverzeichnis, Nomenklatur etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+%\pagestyle{fancy}\lhead{}\chead{}\rhead{\rightmark}
+\pagenumbering{roman} % römische Seitenzahlen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Englischer und Deutscher Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\refstepcounter{Hilfszaehler}
+\renewcommand\abstractname{Kurzfassung}
+\begin{abstract}
+\input{Chapters/Kurzfassung}
+\end{abstract}
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+\input{Chapters/Abstract} 
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhaltsverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nomenklatur
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{Nomenklatur}
+%\rhead{Nomenklatur}
+\include{Chapters/Abkuerzungen}
+%\rhead{\rightmark} %Zurücksetzen der Kopfzeile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbildungsverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tabellenverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort, falls notwendig, sonst komplett auskommentieren
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{Vorwort}
+\input{Chapters/Vorwort.tex}
+%\rhead{Vorwort}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Setup der normalen Seiten
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagenumbering{arabic}
+%\pagestyle{fancy}\lhead{\leftmark}\chead{}\rhead{\rightmark}
+%\rhead{\rightmark}
+%\lhead{\leftmark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hier werden die einzelnen Kapitel eingebunden.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapters/Teil1.tex}
+\input{Chapters/Teil2.tex}
+\input{Chapters/Teil3.tex}
+\input{Chapters/Teil4.tex}
+\input{Chapters/Teil5.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Einbinden der Bibliographie
+% Das benötigte File liegt auf dem SVN-Server im Repository
+% Nach Möglichkeit bitte dieses File verwenden, da es
+% Mehrarbeit erspart!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\refstepcounter{Hilfszaehler}
+\addcontentsline{toc}{chapter}{\bibname}
+\protect\bibliographystyle{natdin}
+\bibliography{Literatur}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Einbinden des Anhangs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\clearpage
+\vfill{}\vspace{-1\parskip}
+\begin{center}\textsf{\textbf{\huge Anhang}}\end{center}{\huge \par}
+\vfill{}
+\appendix
+\newpage
+%\pagestyle{fancy}
+\input{Chapters/Anhang.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Eigenständigkeitserklärung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\pagestyle{empty}
+\input{Chapters/Eigenstaendigkeitserklaerung.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

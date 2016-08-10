@@ -1,0 +1,73 @@
+\chapter{Temperaturkorrektur}
+\label{cha:Hauptteil}
+
+\section{Temperaturmessung an den Abströmflächen}
+\label{sec:Temperaturmessung an den Abströmflächen}
+
+Korrektur der Austrittstemperatur
+Das Temperaturprofil an den Luftaustrittsflächen des Enthalpieübertragers ist nicht vollständig homogen. Die Inhomogenität im Temperaturprofil wird im Wesentlichen durch drei Einflüsse hervorgerufen. Diese drei Einflüsse sind:
+1. eine ungleichmäßige Anströmung am Eintritt in den Enthalpieübertrager, 
+2. eine Aufweitung des Strömungskanals im Vergleich zum Eintritts- beziehungsweise Austrittsquerschnitt und 
+3. eine zumindest teilweise in Kreuzform geführte Strömungsgeometrie. 
+
+Das Temperaturprofil wird außerdem durch Wärmeverluste an die Umgebung beeinflusst. Diese werden im Folgenden aber als gering eingeschätzt und bei der Berechnung vernachlässigt.
+
+Um die Einflüsse der anderen drei Faktoren abschätzen zu können, wurde ein Kreuz aus Temperaturmesssensoren (PT100) direkt an den Austrittsflächen des Übertragers angebracht, wie in … beschrieben. 
+
+Anordnung
+
+%Abbildung Kreuzanordnung
+
+In Abbildung … ist das mittlere Temperaturprofil aus den Messungen 1-23 aus Tabelle--- über x und y dargestellt. Dabei stellen x und y die Koordinaten eines orthogonalen Koordinatensystems dar, das parallel zur jeweiligen Abströmfläche liegt. Sowohl für die Fortluft als auch für die Abluft ergibt sich eine Funktion zweiten oder höheren Grades. Verluste an den Wänden lassen eine quadratische Funktion vermuten, was die Mittellage der Extrempunkte erklärt. Diese Funktion wird von einer weiteren Funktion überlagert, die durch das Kreuzströmungsprofil erzeugt wird, wie in … beschrieben. So kommt es zu unterschiedlichen Temperaturen an den Positionen x = 1 und x = 3 sowie y = 1 und y = 3.
+
+%Haupteffektbildchen einfügen
+
+Bei einem reinen adiabten Gegenstromübertrager ist die Temperatur über die x- und y- Achse Konstant. Die Temperatur ändert sich entlang der Strömungsachse. Abbildung … zeigt eine vereinfachte Darstellung des Temperaturverlaufes in einem Gegenstromübertrager entlang der Strömungsrichtung. Die Temperaturverläufe wurden vereinfacht linear angenommen. Der Wärmekapazitätskoeffizient ist auf der Frischluftseite und der Sweepseite gleich groß. Daher besitzen beide Geraden die gleiche Steigung.
+
+%Abbildungen zum reinen Gegenstromübertragung
+
+Da sich die kälteste Stelle des Frischluftstromes (Außenluft) mit der kältesten Stelle des Sweepstromes (Fortluft) trifft und die heißestes Stelle des Frischluftstromes mit der heißesten Stelle des Sweepstromes ist die Temperaturdifferenz zwischen beiden Strömen konstant. So kann das Potential des Sweepstromes optimal ausgenutzt werden. 
+
+Für einen reinen Kreuzstromübertrager gilt dies nicht. Wie Abblidung …. zeigt, treffen sich in einer Ecke des Übertragers die heißeste und die kälteste Stelle der Luftströme aufeinander. So kann der Volumenstrom der an der … Seite des Übertragers nicht das volle Potenzial des … Stromes nutzen. Unter den gleichen Bedingungen wie beim reinen Gleichstromübertrager entsteht das in der Abbildung dargestellte Temperaturprofil. 
+
+%Abbildung zum reinen Kreuzübertrager
+
+Um Bilanzen über den Enthalpietauscher ziehen zu können, muss eine mittlere Temperatur für jede Abströmfläche gefunden werden. Als mittlere Temperatur wird im vorliegenden Fall die über die Fläche gemittelete Temperatur genutzt. 
+Die über die Fläche gemittelte Temperatur ergibt sich jeweils aus dem Flächenintegral der Regressiongleichung für die Fortluft- und die Zulufttemperatur. Wie bereits in … beschrieben, wird jeweils ein linearer und ein quadratischer Term benötigt um die Abhängigkeit der Temperatur von x und y zu beschreiben. Außerdem ist hängt die Temperaturverteilung über die jeweilige Abströmfläche aufgrund der Effekte der Kreuzstromübertragung von der Temperaturdifferenz über die Membran ab. Diese Temperaturdifferenz wird über einen linearen Term in Abhängigkeit von delta_T_z 
+delta_T = T_AUL - T_ABL 
+dargestellt. 
+Über die Regressionfunktion wird zunächst die Temperaturdifferenz delta_T_FOL beziehungsweise delta_T_ZUL  beschrieben. Dabei ist delta_T_FOL 
+Delta_T_FOL = T(x,y,delta_T_Z)-T_FOL_Mitte
+die Differenz zwischen der Temperatur an der Stelle (x,y) bei delta T_Z und der in der Mitte gemessenen Fortlufttemperatur. 
+Analog gilt für die Temperaturdifferenz delta_T_ZUL
+Delta_T_ZUL = T(x,y,delta_T_Z)  -T_ZUL_Mitte.
+Aus den in Tabelle … aufgegeführten Daten ergibt sich für delta T_FOL mit der Regressionsfunktion des Programms Minitab die Gleichung:
+….
+Für delta T_ZUL ergibt sich analog 
+….
+Die Verläufe der Regressionskurven sind in Abbildung ... dargestellt.
+Zur Bildung der Flächengemittlelten Temperatur werden die Regressionsgleichungen jeweils über x und y intergriert und durch die Abströmfläche A_Abst geteilt. 
+Dementsprechend ergibt sich die gemittelte Temperaturdifferenz der Fortluft zu,
+…
+Und die gemittelte Temperaturdifferenz der Abluft zu
+…
+Die Integrationsgrenzen für x und y ergeben sich aus den Abmaßen der Abströmfläche. In x-Richtung wird von 0 mm bis 140 mm integriert. In y-Richtung wird von 0 mm bis 196 mm integriert. Für Fläche A_Abst ergibt sich entsprechen:
+A_Abst = x * y = 450 mm * 196 mm = 76050 mm².
+Durch die Integration ergibt sich für deltaTFolgem
+…
+Und für deltatABLgem
+… 
+Somit lässt sich die Fortlufttemperatur T_ZUL für weiter Rechnungen und Bilanzen zu
+…
+Ermitteln und die Zulufttemperatur T_ZUL zu 
+…
+
+
+und delta_T_ZUL die Differenzen der einer 
+
+
+Die Temperaturdifferenz delta_T_FOL (x,y,delta_Tz)  beziehungsweise delta_T_ZUL (x,y,delta_Tz) gibt dabei die Differenz zwischen der Fortlufttemperatur T_FOL beziehungsweise der Zulufttemperatur T_ZUL in Abhängigkeit von x, y und der delta_Tz an. Dabei ist delta_T_ Das Flächenintegral der Temperatur ergibt sich aus den Regessionskurven, die über die gemessen Punkte gelegt werden (s.Abb…). Für die Regressionskurve wurden aus den in … beschrieben Gründen die linearen und quadratischen Terme für die x- und die y-Koordinaten in Betracht gezogen. Um den Einfluss der Temperaturdifferenz über die Membran abzubilden, wurde außerdem die Temperaturdifferenz delta_T als 
+delta_T = T_AUL - T_ABL 
+definierte. So ergibt sich anhand der in Tablelle … aufgeführten Daten einen Regressiongleichung von 
+…
+Für die mittlere Differenz zur in der Mitte gemessenen Fortlufttemperatur T_m, delta T_m

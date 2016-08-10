@@ -48,7 +48,7 @@ else
     EFi = 1 + 10^-4 *(2.2 + P_ambr * (0.0383 + 6.4*10^-6 * T.^2));
     f1iT = EFi * ai .* exp((bi - T/di) .* T./(T + ci));    %saturation pressure from temperature
     f1iDP = (RH/100) .* f1iT;  % vaporPressure
-    xW = ((18.015/28.963) * f1iDP ./(P_ambr - f1iDP));
+    xW = ((18.015/28.963) * f1iDP ./(P_ambr*einvec - f1iDP));
 end
 
 
